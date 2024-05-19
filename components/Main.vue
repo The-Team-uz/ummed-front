@@ -1,0 +1,187 @@
+<template>
+  <div class="wrapper">
+    <div class="wrapper-left">
+      <div class="title-1">Расширение возможностей здоровья и благополучия</div>
+      <div class="title-2">
+        Наша миссия — дать людям возможность заботиться о своем здоровье
+        посредством высококачественных, надежных и инновационных медицинских
+        изделий.
+      </div>
+    </div>
+    <div class="wrapper-right">
+      <div class="title">
+        <div v-for="i in 3" class="title-r">
+          <p>ummed</p>
+          <span>®</span>
+        </div>
+      </div>
+      <img src="~/assets/images/doctor.webp" alt="" class="img" />
+      <div class="calendar">
+        <div class="month-year">{{ month }},&nbsp;{{ year }}</div>
+        <div class="week">
+          <div
+            class="weekday"
+            v-for="i in week"
+            :class="i.status == 'true' ? 'active' : ''"
+          >
+            <p class="day">{{ i.day }}</p>
+            <p class="date">{{ i.date }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+const day = ref("");
+const month = ref("");
+const weekday = ref("");
+const year = ref("");
+const week = ref([]);
+
+const updateTime = () => {
+  const now = new Date();
+  day.value = now.getDate().toString();
+  month.value = now.toLocaleString("default", { month: "long" });
+  weekday.value = now.toLocaleString("default", { weekday: "short" });
+  year.value = now.getFullYear().toString();
+
+  fillWeekDates(now);
+};
+
+const fillWeekDates = (currentDate) => {
+  const daysOfWeek = ["Пнд", "Втр", "Срд", "Чтв", "Птн", "Сбт", "Вск"];
+  const currentDayIndex = (currentDate.getDay() + 6) % 7;
+  week.value = [];
+
+  for (let i = 0; i < 7; i++) {
+    const tempDate = new Date(currentDate);
+    tempDate.setDate(currentDate.getDate() + (i - currentDayIndex));
+
+    const isActive =
+      tempDate.toDateString() === currentDate.toDateString() ? "true" : "false";
+
+    week.value.push({
+      day: daysOfWeek[tempDate.getDay() === 0 ? 6 : tempDate.getDay() - 1],
+      date: tempDate.getDate().toString(),
+      status: isActive,
+    });
+  }
+};
+
+onMounted(() => {
+  updateTime();
+});
+</script>
+
+<style lang="scss" scoped>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  .wrapper-left {
+    width: calc(100% / 2);
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .title-1 {
+      width: 500px;
+      font-size: 90px;
+      font-weight: 800;
+      color: #001047;
+    }
+    .title-2 {
+      max-width: 500px;
+      font-size: 25px;
+      color: #676c80;
+      // margin-top: 30px;
+      margin-bottom: 10px;
+      line-height: 1.5em;
+    }
+  }
+  .wrapper-right {
+    position: relative;
+    width: 45%;
+    height: 670px;
+    .title {
+      position: absolute;
+      margin-top: 60px;
+      position: absolute;
+      bottom: auto;
+      left: -18%;
+      right: auto;
+      color: #001047;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 23px;
+      background-color: rgba(250, 250, 250, 0.3);
+      backdrop-filter: blur(20px);
+      width: 234px;
+      border-radius: 20px;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .title-r {
+        display: flex;
+      }
+      span {
+        font-weight: 800;
+        font-size: 14px;
+      }
+    }
+    .img {
+      width: 500px;
+      height: 720px;
+      border-radius: 20px;
+    }
+    .calendar {
+      position: absolute;
+      top: 40%;
+      right: -15%;
+      width: 340px;
+      height: 150px;
+      background-color: #eef1fb;
+      border-radius: 2rem;
+      .month-year {
+        padding: 25px 20px;
+        font-size: 18px;
+        text-transform: capitalize;
+        display: block !important;
+        height: 30px;
+      }
+      .week {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.5;
+        .weekday {
+          padding: 16px 5px;
+          .day {
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            line-height: 20px;
+          }
+        }
+      }
+      .active {
+        background-color: #1946da;
+        color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 0px 6px 3px rgba(5, 55, 219, 0.2);
+      }
+    }
+  }
+}
+</style>

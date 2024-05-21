@@ -153,23 +153,23 @@ onMounted(() => {
       height: 150px;
       background-color: #eef1fb;
       border-radius: 2rem;
-      .month-year {
+      .month-yearr {
         padding: 25px 20px;
         font-size: 18px;
         text-transform: capitalize;
         display: block !important;
         height: 30px;
       }
-      .week {
+      .weekk {
         padding: 10px 20px;
         display: flex;
         justify-content: space-between;
         text-align: center;
         font-size: 12px;
         line-height: 1.5;
-        .weekday {
+        .weekdayy {
           padding: 16px 5px;
-          .day {
+          .dayy {
             text-transform: uppercase;
             letter-spacing: 1.5px;
             line-height: 20px;

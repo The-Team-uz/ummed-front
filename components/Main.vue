@@ -1,31 +1,31 @@
 <template>
-  <div class="wrapper">
-    <div class="wrapper-left">
-      <div class="title-1">Расширение возможностей здоровья и благополучия</div>
-      <div class="title-2">
+  <div class="wrapperr">
+    <div class="wrapper-leftt">
+      <div class="title-11">Расширение возможностей здоровья и благополучия</div>
+      <div class="title-22">
         Наша миссия — дать людям возможность заботиться о своем здоровье
         посредством высококачественных, надежных и инновационных медицинских
         изделий.
       </div>
     </div>
-    <div class="wrapper-right">
-      <div class="title">
-        <div v-for="i in 3" class="title-r">
+    <div class="wrapper-rightt">
+      <div class="titlee">
+        <div v-for="i in 3" class="title-rr">
           <p>ummed</p>
           <span>®</span>
         </div>
       </div>
       <img src="~/assets/images/doctor.webp" alt="" class="img" />
-      <div class="calendar">
-        <div class="month-year">{{ month }},&nbsp;{{ year }}</div>
-        <div class="week">
+      <div class="calendarr">
+        <div class="month-yearr">{{ month }},&nbsp;{{ year }}</div>
+        <div class="weekk">
           <div
-            class="weekday"
+            class="weekdayy"
             v-for="i in week"
             :class="i.status == 'true' ? 'active' : ''"
           >
-            <p class="day">{{ i.day }}</p>
-            <p class="date">{{ i.date }}</p>
+            <p class="dayy">{{ i.day }}</p>
+            <p class="datee">{{ i.date }}</p>
           </div>
         </div>
       </div>
@@ -81,25 +81,26 @@ onMounted(() => {
   margin: 0;
   box-sizing: border-box;
 }
-.wrapper {
+.wrapperr {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100vh;
-  .wrapper-left {
+  .wrapper-leftt {
     width: calc(100% / 2);
     height: 670px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    .title-1 {
+    .title-11 {
       width: 500px;
       font-size: 90px;
       font-weight: 800;
       color: #001047;
+      line-height: 1em;
     }
-    .title-2 {
+    .title-22 {
       max-width: 500px;
       font-size: 25px;
       color: #676c80;
@@ -108,11 +109,11 @@ onMounted(() => {
       line-height: 1.5em;
     }
   }
-  .wrapper-right {
+  .wrapper-rightt {
     position: relative;
     width: 45%;
     height: 670px;
-    .title {
+    .titlee {
       position: absolute;
       margin-top: 60px;
       position: absolute;
@@ -131,7 +132,7 @@ onMounted(() => {
       display: flex;
       align-items: center;
       flex-direction: column;
-      .title-r {
+      .title-rr {
         display: flex;
       }
       span {
@@ -144,7 +145,7 @@ onMounted(() => {
       height: 720px;
       border-radius: 20px;
     }
-    .calendar {
+    .calendarr {
       position: absolute;
       top: 40%;
       right: -15%;

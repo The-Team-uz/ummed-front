@@ -1,9 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-<<<<<<< HEAD
   plugins: ["~/plugins/element-plus.js"],
-=======
   modules: ["nuxt-aos"],
   aos: {
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -24,5 +22,4 @@ export default defineNuxtConfig({
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
   },
->>>>>>> 6f8757c714b4d46f899655df6326b017ef27a544
 });

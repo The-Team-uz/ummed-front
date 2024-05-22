@@ -5,6 +5,7 @@ import "./assets/main.css";
   <div class="container">
     <Main />
     <OurServices />
+    <Companies />
   </div>
 </template>
 <style scoped>

@@ -23,7 +23,7 @@
           >
             <div class="image-row">
               <img
-                src="https://assets-global.website-files.com/64c23c6ec82b2204b21af185/64c785313bb6e5df119ae7fb_star.svg"
+                src="../assets/images/25years.webp"
                 loading="lazy"
                 width="34"
                 height="34"
@@ -31,10 +31,12 @@
               />
             </div>
             <div class="text-row">
-              <h4>25+ years experience</h4>
+              <h4>10+ лет опыта</h4>
               <div>
-                Our system makes it easy for healthcare professionals tho share
-                and collaborate on patient care.
+                Мы работаем с нашими клиентами на выгодных партнерских условиях
+                и с каждым годом увеличиваем количество постоянных клиентов, что
+                говорит о нашем профессионализме и высоком уровне доверия среди
+                медицинского сообщества.
               </div>
             </div>
           </div>
@@ -49,7 +51,7 @@
           >
             <div class="image-row">
               <img
-                src="https://assets-global.website-files.com/64c23c6ec82b2204b21af185/64c78531a5e3e1334297e5ae_emotion-smile.svg"
+                src="../assets/images/fast.png"
                 loading="lazy"
                 width="34"
                 height="34"
@@ -57,10 +59,12 @@
               />
             </div>
             <div class="text-row">
-              <h4>Fast process, best result</h4>
+              <h4>ШИРОКИЙ АССОРТИМЕНТ</h4>
               <div>
-                Our system makes it easy for healthcare professionals tho share
-                and collaborate on patient care.
+                Мы стараемся обеспечить своим клиентам возможность получить все
+                необходимые товары и предлагаем полный ассортимент изделий
+                медицинского назначения для профессионального и бытового
+                использования.
               </div>
             </div>
           </div>
@@ -75,7 +79,7 @@
           >
             <div class="image-row">
               <img
-                src="https://assets-global.website-files.com/64c23c6ec82b2204b21af185/64c78531eeb2fae71dd5492b_users.svg"
+                src="../assets/images/proteam.jpg"
                 loading="lazy"
                 width="34"
                 height="34"
@@ -83,10 +87,11 @@
               />
             </div>
             <div class="text-row">
-              <h4>Professional medical team</h4>
+              <h4>СОБСТВЕННЫЙ СКЛАД</h4>
               <div>
-                Our system makes it easy for healthcare professionals tho share
-                and collaborate on patient care.
+                Мы имеем собственный современный складской комплекс, оснащенный
+                всем необходимым для хранения продукции в соответствии с
+                требованиями наших производителей.
               </div>
             </div>
           </div>
@@ -97,11 +102,15 @@
           class="home-contacts-content"
         >
           <div class="contacts-title">
-            <h2>Here’s what makes us different from conventional clinics</h2>
+            <h2>Вот чем мы отличаемся от обычных поставщиков</h2>
           </div>
           <p class="paragraph-large spacing">
-            At Curemed, we are passionate about improving lives through
-            knowledge and empowerment.
+            Мы являемся дистрибьютором известных импортных и отечественных
+            производителей медицинских расходных материалов и медицинских
+            изделий: ГК ПАЛЬМА, ЭЛТА, АТЛЕТИКА, STERILANCE. SANDSTONE и др.
+            Прочные отношения с производителями, поиск новых продуктов и
+            направлений, позволяют предлагать нашим партнерам больше современных
+            и эффективных решений.
           </p>
         </div>
       </div>

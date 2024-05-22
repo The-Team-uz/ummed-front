@@ -1,26 +1,9 @@
 <template>
-  <div class="section without-bottom-spacing">
+  <div id="services" class="section without-bottom-spacing">
     <div class="base-container w-container">
       <div class="home-contacts-wrapper about">
-        <div
-          data-w-id="60546b75-6273-7900-604e-82cf065e7a33"
-          style="
-            opacity: 1;
-            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-              rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-            transform-style: preserve-3d;
-          "
-          class="block-benefits about"
-        >
-          <div
-            class="row-benefit"
-            style="
-              opacity: 1;
-              transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-              transform-style: preserve-3d;
-            "
-          >
+        <div data-aos="fade-left" class="block-benefits about">
+          <div class="row-benefit">
             <div class="image-row">
               <img
                 src="../assets/images/25years.webp"
@@ -40,15 +23,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="row-benefit"
-            style="
-              opacity: 1;
-              transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-              transform-style: preserve-3d;
-            "
-          >
+          <div class="row-benefit">
             <div class="image-row">
               <img
                 src="../assets/images/fast.png"

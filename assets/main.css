@@ -3938,7 +3938,7 @@ blockquote {
 .nav-menu {
     text-align: right;
     flex: 1;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     display: flex;
 }

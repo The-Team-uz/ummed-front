@@ -1,7 +1,9 @@
 <template>
-  <div class="wrapperr">
+  <div class="wrapperr" data-aos="fade-up">
     <div class="wrapper-leftt">
-      <div class="title-11">Расширение возможностей здоровья и благополучия</div>
+      <div class="title-11">
+        Расширение возможностей здоровья и благополучия
+      </div>
       <div class="title-22">
         Наша миссия — дать людям возможность заботиться о своем здоровье
         посредством высококачественных, надежных и инновационных медицинских
@@ -11,7 +13,7 @@
     <div class="wrapper-rightt">
       <div class="titlee">
         <div v-for="i in 3" class="title-rr">
-          <p>ummed</p>
+          <div class="p">ummed</div>
           <span>®</span>
         </div>
       </div>
@@ -24,8 +26,8 @@
             v-for="i in week"
             :class="i.status == 'true' ? 'active' : ''"
           >
-            <p class="dayy">{{ i.day }}</p>
-            <p class="datee">{{ i.date }}</p>
+            <div class="dayy">{{ i.day }}</div>
+            <div class="datee">{{ i.date }}</div>
           </div>
         </div>
       </div>
@@ -84,25 +86,25 @@ onMounted(() => {
 .wrapperr {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
-  height: 100vh;
   .wrapper-leftt {
     width: calc(100% / 2);
     height: 670px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    // justify-content: space-around;
+    gap: 40px;
     .title-11 {
       width: 500px;
-      font-size: 90px;
+      font-size: 80px;
       font-weight: 800;
       color: #001047;
       line-height: 1em;
     }
     .title-22 {
       max-width: 500px;
-      font-size: 25px;
+      font-size: 20px;
       color: #676c80;
       // margin-top: 30px;
       margin-bottom: 10px;
@@ -121,12 +123,12 @@ onMounted(() => {
       left: -18%;
       right: auto;
       color: #001047;
-      font-size: 30px;
+      // font-size: 30px;
       font-weight: 600;
       line-height: 23px;
       background-color: rgba(250, 250, 250, 0.3);
       backdrop-filter: blur(20px);
-      width: 234px;
+      width: 184px;
       border-radius: 20px;
       padding: 10px 0;
       display: flex;

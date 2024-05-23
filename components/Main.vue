@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapperr" data-aos="fade-up">
+  <div class="wrapperr nav-container" data-aos="fade-up">
     <div class="wrapper-leftt">
       <div class="title-11">
         Расширение возможностей здоровья и благополучия

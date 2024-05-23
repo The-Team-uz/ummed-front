@@ -1,54 +1,74 @@
+<script setup lang="ts">
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+import "swiper/css";
+
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
+import { FreeMode, Pagination, Autoplay } from "swiper/modules";
+const modules = [Autoplay, Pagination, FreeMode];
+</script>
 <template>
   <div class="section about" style="margin-top: 50px">
     <div class="base-container w-container">
-      <div
-        data-w-id="4a5d6612-6e62-353f-19b3-30d8ffeb2dfb"
-        style="
-          opacity: 1;
-          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-          transform-style: preserve-3d;
-        "
-        class="section-title-wrapper"
-      >
+      <div class="section-title-wrapper">
         <h2 id="provide-assistance">
           Партнерские отношения, совместная работа, объединение знаний и опыта
           обеспечивают рост и развитие
         </h2>
-        <!-- <p class="paragraph-large spacing">
-          At Curemed, we are passionate about improving lives through knowledge
-          and empowerment.
-        </p>
-        <a href="#" class="primary-button w-button">All Services</a> -->
       </div>
     </div>
-    <div class="brands">
-      <img src="../assets/images/1.jpg" alt="img" />
-      <img src="../assets/images/2.png" alt="img" />
-      <img src="../assets/images/3.png" alt="img" />
-      <img src="../assets/images/4.png" alt="img" />
-      <img src="../assets/images/5.jpg" alt="img" />
-      <img src="../assets/images/6.jpg" alt="img" />
-      <img src="../assets/images/7.jpg" alt="img" />
-      <img src="../assets/images/8.jpg" alt="img" />
-      <img src="../assets/images/9.png" alt="img" />
-      <img src="../assets/images/10.png" alt="img" />
-    </div>
+
+    <Swiper
+      :modules="modules"
+      :slides-per-view="3"
+      :space-between="30"
+      :autoplay="{
+        delay: 5000,
+      }"
+      class="swiper"
+      :loop="true"
+    >
+      <SwiperSlide class="slide"
+        ><img src="~/assets/images/1.jpg" alt="" />
+      </SwiperSlide>
+      <SwiperSlide class="slide">
+        <img src="~/assets/images/2.jpg" alt="" /> </SwiperSlide
+      ><SwiperSlide class="slide">
+        <img src="~/assets/images/3.jpg" alt="" /> </SwiperSlide
+      ><SwiperSlide class="slide">
+        <img src="~/assets/images/4.jpg" alt="" /> </SwiperSlide
+      ><SwiperSlide class="slide">
+        <img src="~/assets/images/6.jpg" alt="" /> </SwiperSlide
+      ><SwiperSlide class="slide">
+        <img src="~/assets/images/7.jpg" alt="" /> </SwiperSlide
+      ><SwiperSlide class="slide">
+        <img src="~/assets/images/8.jpg" alt="" /> </SwiperSlide
+      ><SwiperSlide class="slide"
+        ><img src="~/assets/images/9.jpg" alt="" /></SwiperSlide
+      ><SwiperSlide class="slide"
+        ><img src="~/assets/images/10.jpg" alt=""
+      /></SwiperSlide>
+    </Swiper>
   </div>
 </template>
 
-<script setup></script>
-
 <style lang="scss" scoped>
-.brands {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  img {
-    width: 20%;
-    
+.swiper {
+  width: 100%;
+  .slide {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9f2f9;
+    border-radius: 18px;
+    img {
+      mix-blend-mode: multiply;
+      width: 180px;
+      object-fit: contain;
+    }
   }
 }
 </style>

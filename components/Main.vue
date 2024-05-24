@@ -117,6 +117,7 @@ onMounted(() => {
     width: 45%;
     height: 670px;
     .titlee {
+      border: 1px solid #fff !important;
       position: absolute;
       margin-top: 60px;
       position: absolute;
@@ -134,6 +135,7 @@ onMounted(() => {
       display: flex;
       align-items: center;
       flex-direction: column;
+      box-shadow: 0 0 2px 0.8px rgba(129, 129, 129, 0.2);
       .title-rr {
         display: flex;
       }
@@ -155,6 +157,7 @@ onMounted(() => {
       height: 150px;
       background-color: #eef1fb;
       border-radius: 2rem;
+      box-shadow: 0 0 2px 0.8px rgba(129, 129, 129, 0.2);
       .month-yearr {
         padding: 25px 20px;
         font-size: 18px;
@@ -182,7 +185,7 @@ onMounted(() => {
         background-color: #ffa500;
         color: #fff;
         border-radius: 20px;
-        box-shadow: 0px 0px 6px 3px rgba(5, 55, 219, 0.2);
+        box-shadow: 0 0 8px 1px rgba(68, 68, 68, 0.2);
       }
     }
   }

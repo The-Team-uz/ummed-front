@@ -84,6 +84,11 @@
 
 .navbar-brand {
   width: 150px;
+  img {
+    width: 150px;
+    margin-left: -32px;
+    margin-bottom: -30px;
+  }
 }
 .container-fluid {
   max-width: 960px;
@@ -109,9 +114,11 @@
 }
 
 .footer-about-column {
-  flex-direction: column;
-  max-width: 260px;
   display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 260px;
+  margin-top: -15px;
 }
 
 .footer-soocial-link-wrapper {
@@ -188,7 +195,8 @@
 }
 
 .footer-two {
-  background-image: url("https://assets-global.website-files.com/6551ed212e2ea32fb46bb7c8/655305d137d5a3d3de308ebf_footer-bg.png");
+  background-color: #e9f2f9;
+  /* background-image: url("https://assets-global.website-files.com/6551ed212e2ea32fb46bb7c8/655305d137d5a3d3de308ebf_footer-bg.png"); */
   background-position: 0 0;
   background-size: cover;
   position: relative;

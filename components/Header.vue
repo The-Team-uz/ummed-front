@@ -26,24 +26,18 @@
               <p class="nav-item-title">Контакты</p>
             </div>
           </div>
+          <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
+            <p class="nav-item-title">Русский</p>
+          </div>
         </div>
       </nav>
-      <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
-        <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-          <p class="nav-item-title">Русский</p>
-        </div>
-      </div>
 
       <div class="menu-button w-nav-button" role="button" @click="open">
-        <img
-          src="~/assets/images/gamburger.svg"
-          height="16"
-          class="image-burger"
-        />
+        <img src="~/assets/images/gamburger.svg" class="image-burger" />
       </div>
-    </div>
 
-    <div v-if="isOpen" class="w-nav-overlay" @click="close"></div>
+      <div v-if="isOpen" class="w-nav-overlay" @click="close"></div>
+    </div>
   </div>
 </template>
 

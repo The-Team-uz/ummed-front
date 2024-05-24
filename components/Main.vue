@@ -182,7 +182,7 @@ onMounted(() => {
         }
       }
       .active {
-        background-color: #ffa500;
+        background-color: #FE5722;
         color: #fff;
         border-radius: 20px;
         box-shadow: 0 0 8px 1px rgba(68, 68, 68, 0.2);

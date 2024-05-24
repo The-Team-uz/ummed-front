@@ -11,8 +11,10 @@ import "./assets/footer.css";
     <div class="container">
       <Header />
       <Main />
+      <Video />
       <OurServices />
       <Companies />
+      <Routes />
     </div>
     <Footer />
   </div>

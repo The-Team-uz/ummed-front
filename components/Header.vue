@@ -1,6 +1,6 @@
 <template>
-  <div role="banner" class="navbar w-nav">
-    <div class="nav-container w-container">
+  <div class="navbar w-nav">
+    <div class="">
       <div class="nav-menu-wrapper">
         <a href="/" class="brand w-nav-brand" aria-label="home"
           ><img

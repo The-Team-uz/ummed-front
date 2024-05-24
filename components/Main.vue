@@ -87,6 +87,7 @@ onMounted(() => {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-left: 15px;
   .wrapper-leftt {
     width: calc(100% / 2);
     height: 670px;
@@ -97,8 +98,8 @@ onMounted(() => {
     gap: 40px;
     .title-11 {
       width: 500px;
-      font-size: 80px;
-      font-weight: 800;
+      font-size: 60px;
+      font-weight: 700;
       color: #001047;
       line-height: 1em;
     }
@@ -106,7 +107,7 @@ onMounted(() => {
       max-width: 500px;
       font-size: 20px;
       color: #676c80;
-      // margin-top: 30px;
+      margin-top: -20px;
       margin-bottom: 10px;
       line-height: 1.5em;
     }
@@ -123,7 +124,6 @@ onMounted(() => {
       left: -18%;
       right: auto;
       color: #001047;
-      // font-size: 30px;
       font-weight: 600;
       line-height: 23px;
       background-color: rgba(250, 250, 250, 0.3);
@@ -179,7 +179,7 @@ onMounted(() => {
         }
       }
       .active {
-        background-color: #1946da;
+        background-color: #ffa500;
         color: #fff;
         border-radius: 20px;
         box-shadow: 0px 0px 6px 3px rgba(5, 55, 219, 0.2);

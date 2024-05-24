@@ -10,7 +10,7 @@ import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 const modules = [Autoplay, Pagination, FreeMode];
 </script>
 <template>
-  <div class="section about" style="margin-top: 50px">
+  <div class="section about" style="margin-top: 100px">
     <div class="base-container w-container">
       <div class="section-title-wrapper">
         <h2 id="provide-assistance">

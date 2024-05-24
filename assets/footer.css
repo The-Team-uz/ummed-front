@@ -84,6 +84,11 @@
 
 .navbar-brand {
   width: 150px;
+  img {
+    width: 150px;
+    margin-left: -32px;
+    margin-bottom: -30px;
+  }
 }
 .container-fluid {
   max-width: 960px;
@@ -109,9 +114,11 @@
 }
 
 .footer-about-column {
-  flex-direction: column;
-  max-width: 260px;
   display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 260px;
+  margin-top: -15px;
 }
 
 .footer-soocial-link-wrapper {

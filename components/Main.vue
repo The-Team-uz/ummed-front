@@ -182,7 +182,7 @@ onMounted(() => {
         background-color: #ffa500;
         color: #fff;
         border-radius: 20px;
-        box-shadow: 0px 0px 6px 3px rgba(5, 55, 219, 0.2);
+        box-shadow: 0px 0px 6px 3px rgba(255, 183, 0, 0.2);
       }
     }
   }

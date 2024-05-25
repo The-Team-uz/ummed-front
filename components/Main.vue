@@ -17,7 +17,7 @@
           <span>®</span>
         </div>
       </div>
-      <img src="~/assets/images/doctor.webp" alt="" class="img" />
+      <img src="~/assets/images/asbob.jpg" alt="" class="img" />
       <div class="calendarr">
         <div class="month-yearr">{{ month }},&nbsp;{{ year }}</div>
         <div class="weekk">

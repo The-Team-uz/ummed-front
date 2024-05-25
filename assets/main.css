@@ -245,7 +245,7 @@ th {
   content: "";
 }
 
-.w-icon-arrow-down:before,
+/* .w-icon-arrow-down:before,
 .w-icon-dropdown-toggle:before {
   content: "";
 }
@@ -256,7 +256,7 @@ th {
 
 .w-icon-file-upload-icon:before {
   content: "";
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -2006,7 +2006,7 @@ textarea.w-select {
   height: 100vh;
   width: 100% !important;
   background-color: #00000050 !important;
-  display: block !important;
+  display: flex !important;
   position: absolute !important;
   top: 0 !important;
   left: 0 !important;
@@ -2021,7 +2021,6 @@ textarea.w-select {
   float: right;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -5882,6 +5881,7 @@ blockquote {
 }
 
 .menu-wrap {
+  height: 100%;
   align-items: center;
   display: flex;
 }
@@ -9718,12 +9718,23 @@ blockquote {
 
   .tablet-menu {
     justify-content: space-between;
-    align-items: center;
-    height: 60px;
+    /* align-items: center; */
+    /* position: absolute; */
+    /* height: 200px; */
     padding-top: 15px;
-    padding-bottom: 15px;
+    /* padding-bottom: px; */
     padding-left: 15px;
     display: flex;
+    background-color: #fff;
+    width: 200px;
+
+    .brand-tablet {
+      margin-left: -15px;
+      margin-top: -10px;
+      img {
+        margin-right: -20px;
+      }
+    }
   }
 
   .image-burger {

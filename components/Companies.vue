@@ -23,9 +23,9 @@ const modules = [Autoplay, Pagination, FreeMode];
     <Swiper
       :modules="modules"
       :slides-per-view="3"
-      :space-between="30"
+      :space-between="20"
       :autoplay="{
-        delay: 5000,
+        delay: 1500,
       }"
       class="swiper"
       :loop="true"
@@ -62,7 +62,7 @@ const modules = [Autoplay, Pagination, FreeMode];
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e9f2f9;
+    background-color: #ffccbc;
     border-radius: 18px;
     img {
       mix-blend-mode: multiply;

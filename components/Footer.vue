@@ -18,32 +18,52 @@
             </p>
             <div class="footer-soocial-link-wrapper">
               <a
-                href="#"
+                href="https://www.instagram.com/ummed_uz"
                 target="_blank"
                 class="social-link-block w-inline-block"
-              >
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/ummed_uz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                target="_blank"
-                class="social-link-block w-inline-block"
+                title="Instagram"
               >
                 <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/ummeduz"
+                target="_blank"
+                class="social-link-block w-inline-block"
+                title="Facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
               </a>
               <a
                 href="https://t.me/ummedshop_uz"
                 target="_blank"
                 class="social-link-block w-inline-block"
+                title="Telegram"
               >
                 <i class="fa-brands fa-telegram"></i>
               </a>
+              <!-- <a
+                href="https://www.youtube.com/@Ummeduz"
+                target="_blank"
+                class="social-link-block w-inline-block"
+                title="Youtube"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a> -->
               <a
                 :href="`mailto:ummed.info@mail.ru`"
                 target="_blank"
                 class="social-link-block w-inline-block"
+                title="Email"
               >
                 <i class="fa-regular fa-envelope"></i>
+              </a>
+              <a
+                href="https://t.me/ummed_uz"
+                target="_blank"
+                class="social-link-block w-inline-block"
+                title="Admin"
+              >
+                <i class="fa-regular fa-user"></i>
               </a>
             </div>
           </div>
@@ -89,7 +109,7 @@
         </div>
       </div>
     </div>
-    <div>
+    <!-- <div>
       <img
         src="https://assets-global.website-files.com/6551ed212e2ea32fb46bb7c8/655b135120eb4c16ccf8b1f1_highlighter-shape-11.svg"
         loading="lazy"
@@ -101,7 +121,7 @@
         alt="Footer Highlighter Shape 2"
         class="footer-highlighter-shape-2"
       />
-    </div>
+    </div> -->
   </footer>
 </template>
 

@@ -19,13 +19,15 @@
           muted="true"
           playsinline="true"
         >
-          <source src="~/assets/images/video.mp4" data-wf-ignore="true" />
+          <source src="~/assets/images/video1.mp4" data-wf-ignore="true" />
         </video>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
-
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.section {
+  margin-top: 150px;
+}
+</style>

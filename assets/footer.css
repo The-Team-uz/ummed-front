@@ -195,8 +195,7 @@
 }
 
 .footer-two {
-  background-color: #e9f2f9;
-  /* background-image: url("https://assets-global.website-files.com/6551ed212e2ea32fb46bb7c8/655305d137d5a3d3de308ebf_footer-bg.png"); */
+  background-color: #FFE0DB;
   background-position: 0 0;
   background-size: cover;
   position: relative;
@@ -229,7 +228,7 @@
 
 .social-link-block:hover {
   cursor: pointer;
-  border-color: #ffa500;
+  border-color: #fe5722;
   background-color: #ffa500;
 }
 

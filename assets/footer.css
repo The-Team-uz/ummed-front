@@ -84,12 +84,14 @@
 
 .navbar-brand {
   width: 150px;
+
   img {
     width: 150px;
     margin-left: -32px;
     margin-bottom: -30px;
   }
 }
+
 .container-fluid {
   max-width: 960px;
   padding-left: 15px;
@@ -195,7 +197,7 @@
 }
 
 .footer-two {
-  background-color: #FFE0DB;
+  background-color: #fe552217;
   background-position: 0 0;
   background-size: cover;
   position: relative;
@@ -209,14 +211,14 @@
 }
 
 .social-link-block {
-  border: 1px solid #ffa500;
+  border: 1px solid #4444443a;
   border-radius: 50%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
-  transition: background-color 0.3s, border-color 0.3s;
+  transition: all 0.3s ease-in-out;
   display: flex;
   position: relative;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
@@ -228,8 +230,13 @@
 
 .social-link-block:hover {
   cursor: pointer;
-  border-color: #fe5722;
-  background-color: #ffa500;
+  border-color: #4444443a;
+  background-color: #FE5722;
+
+  i {
+
+    color: #fff;
+  }
 }
 
 .footer-line-two {
@@ -257,13 +264,16 @@
   .navbar-brand {
     width: auto;
   }
+
   .container-fluid,
   .nav-menu-two-container {
     max-width: 1200px;
   }
+
   .footer-about-column {
     max-width: 300px;
   }
+
   .footer-soocial-link-wrapper {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -273,37 +283,45 @@
     grid-column-gap: 28px;
     grid-row-gap: 28px;
   }
+
   .opening-hours-text-two,
   .footer-text-two,
   .footer-text-link-two {
     font-size: 18px;
   }
+
   .footer-about-text-two {
     font-size: 18px;
   }
+
   .social-link-block {
     width: 40px;
     height: 40px;
   }
+
   .container-fluid,
   .nav-menu-two-container {
     max-width: 1434px;
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .footer-about-column {
     max-width: 330px;
   }
+
   .footer-soocial-link-wrapper {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
   }
+
   .footer-link-two,
   .opening-hours-text-two,
   .footer-text-two,
   .footer-text-link-two {
     font-size: 20px;
   }
+
   .footer-about-text-two,
   .footer-white-link,
   .opening-hours-white-text,
@@ -314,11 +332,13 @@
 }
 
 @media screen and (min-width: 1920px) {
+
   .container-fluid,
   .nav-menu-two-container {
     padding-left: 0;
     padding-right: 0;
   }
+
   .footer-highlighter-shape-2 {
     width: auto;
   }
@@ -334,14 +354,17 @@
   .navbar-brand {
     width: auto;
   }
+
   .container-fluid,
   .nav-menu-two-container {
     max-width: 740px;
   }
+
   .footer-upper-section {
     padding-top: 100px;
     padding-bottom: 65px;
   }
+
   .footer-flex {
     grid-column-gap: 60px;
     grid-row-gap: 60px;
@@ -350,14 +373,17 @@
     grid-auto-columns: 1fr;
     display: grid;
   }
+
   .footer-heading {
     font-size: 24px;
   }
+
   .opening-hours-text-two,
   .footer-text-two,
   .footer-text-link-two {
     font-size: 18px;
   }
+
   .footer-about-text-two,
   .footer-white-link,
   .opening-hours-white-text,
@@ -365,6 +391,7 @@
   .footer-white-text-link {
     font-size: 18px;
   }
+
   .footer-highlighter-shape-one {
     top: 100px;
     left: auto;
@@ -376,33 +403,41 @@
   .navbar-brand {
     padding-left: 0;
   }
+
   .container-fluid {
     max-width: 650px;
   }
+
   .footer-upper-section {
     padding-top: 60px;
     padding-bottom: 50px;
   }
+
   .footer-flex {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     grid-template-columns: 1.4fr 1fr;
   }
+
   .footer-soocial-link-wrapper {
     grid-column-gap: 10px;
   }
+
   .opening-hours-item {
     grid-column-gap: 15px;
     grid-row-gap: 15px;
   }
+
   .opening-hours-text-two,
   .footer-text-two,
   .footer-text-link-two {
     font-size: 16px;
   }
+
   .footer-about-text-two {
     font-size: 16px;
   }
+
   .social-link-block {
     width: 35px;
     height: 35px;
@@ -412,6 +447,7 @@
     width: 120px;
     bottom: 120px;
   }
+
   .footer-highlighter-shape-one {
     right: 10px;
   }
@@ -427,11 +463,13 @@
   .opening-hours-wrapper {
     max-width: 280px;
   }
+
   .opening-hours-text-two,
   .footer-text-two,
   .footer-text-link-two {
     font-size: 18px;
   }
+
   .footer-about-text-two,
   .footer-white-link,
   .opening-hours-white-text,
@@ -439,6 +477,7 @@
   .footer-white-text-link {
     font-size: 18px;
   }
+
   .footer-highlighter-shape-2 {
     bottom: 140px;
     right: 10px;

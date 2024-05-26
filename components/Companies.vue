@@ -62,8 +62,9 @@ const modules = [Autoplay, Pagination, FreeMode];
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffccbc;
+    background-color: #fe552217;
     border-radius: 18px;
+    border: 1px solid #4444443a;
     img {
       mix-blend-mode: multiply;
       width: 180px;

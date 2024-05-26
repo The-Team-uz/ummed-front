@@ -100,7 +100,7 @@ onMounted(() => {
       width: 500px;
       font-size: 60px;
       font-weight: 700;
-      color: #001047;
+      color: #000;
       line-height: 1em;
     }
     .title-22 {
@@ -124,7 +124,7 @@ onMounted(() => {
       bottom: auto;
       left: -18%;
       right: auto;
-      color: #001047;
+      color: #000;
       font-weight: 600;
       line-height: 23px;
       background-color: rgba(250, 250, 250, 0.3);
@@ -151,11 +151,11 @@ onMounted(() => {
     }
     .calendarr {
       position: absolute;
-      top: 40%;
-      right: -15%;
+      top: 25%;
+      right: -20%;
       width: 340px;
       height: 150px;
-      background-color: #eef1fb;
+      background-color: #ffd8cbaf;
       border-radius: 2rem;
       box-shadow: 0 0 2px 0.8px rgba(129, 129, 129, 0.2);
       .month-yearr {
@@ -164,6 +164,7 @@ onMounted(() => {
         text-transform: capitalize;
         display: block !important;
         height: 30px;
+        color: #000;
       }
       .weekk {
         padding: 10px 20px;
@@ -174,6 +175,8 @@ onMounted(() => {
         line-height: 1.5;
         .weekdayy {
           padding: 16px 5px;
+          color: #000;
+          font-weight: 500;
           .dayy {
             text-transform: uppercase;
             letter-spacing: 1.5px;
@@ -183,7 +186,8 @@ onMounted(() => {
       }
       .active {
         background-color: #FE5722;
-        color: #fff;
+        color: #fff !important;
+        font-weight: 600 !important;
         border-radius: 20px;
         box-shadow: 0 0 8px 1px rgba(68, 68, 68, 0.2);
       }

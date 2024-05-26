@@ -58,7 +58,7 @@
   align-items: center;
   h2 {
     font-weight: normal;
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 

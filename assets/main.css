@@ -2178,8 +2178,8 @@ textarea.w-select {
 
 :root {
   --paragraph: #676c80;
-  --midnight-blue: #001047;
-  --primary: #1946da;
+  --midnight-blue: #000;
+  --primary: #000000;
   --white-2: #fafafa;
   --black: #2b2b2b;
   --white: white;
@@ -3430,9 +3430,11 @@ h1 {
   color: var(--midnight-blue);
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 60px;
+  font-size: 46px;
   font-weight: 600;
   line-height: 1.2em;
+  width:100%;
+  text-align: center;
 }
 
 h2 {
@@ -3440,9 +3442,10 @@ h2 {
   letter-spacing: -2.3px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 46px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 1em;
+
 }
 
 h3 {
@@ -4067,7 +4070,7 @@ blockquote {
 }
 
 .nav-item-title:hover {
-  color: #ffa500;
+  color: #FE5722;
 }
 
 .licensing-title-wrapper {

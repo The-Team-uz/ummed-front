@@ -7,7 +7,7 @@
           <h2>Партнёрам</h2>
           <div class="image-right spacing">
             <img
-              src="../assets/images/uzum.webp"
+              src="../assets/images/uzum.jpg"
               loading="lazy"
               alt="Uzum image"
               class="image-cover"
@@ -15,7 +15,7 @@
           </div>
         </div>
         <a href="https://uzum.uz/ru/ummed" class="primary-button w-button"
-          >Learn More</a
+          >Подробнее</a
         >
       </div>
 
@@ -32,7 +32,7 @@
           </div>
         </div>
         <a href="https://linktr.ee/ummeduz" class="primary-button w-button"
-          >Learn More</a
+          >Подробнее</a
         >
       </div>
     </div>
@@ -70,5 +70,6 @@
 
 .primary-button:hover {
   background-color: #fff;
+  border-color: #000;
 }
 </style>

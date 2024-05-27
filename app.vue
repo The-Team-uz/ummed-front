@@ -28,8 +28,9 @@ import "./assets/footer.css";
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
+  padding: 0 20px;
   width: 100%;
   display: flex;
   flex-direction: column;

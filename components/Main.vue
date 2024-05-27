@@ -77,51 +77,87 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
+@import "~/assets/_mixins.scss";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 .wrapperr {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
-  margin-left: 15px;
+  display: block;
+  @include breakpoint(lg) {
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
   .wrapper-leftt {
-    width: calc(100% / 2);
-    height: 670px;
+    width: 100%;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     // justify-content: space-around;
+    height: 300px;
+    @include breakpoint(xs) {
+      height: 400px;
+    }
     gap: 40px;
+    @include breakpoint(lg) {
+      text-align: start;
+      width: calc(100% / 2);
+      height: 670px;
+    }
     .title-11 {
-      width: 500px;
-      font-size: 60px;
       font-weight: 700;
       color: #000;
       line-height: 1em;
+      font-size: 30px;
+      @include breakpoint(xs) {
+        width: 500px;
+        font-size: 40px;
+      }
+      @include breakpoint(md) {
+        font-size: 60px;
+        width: 800px;
+      }
+      @include breakpoint(lg) {
+        width: 500px;
+      }
     }
     .title-22 {
-      max-width: 500px;
-      font-size: 20px;
       color: #676c80;
       margin-top: -20px;
       margin-bottom: 10px;
       line-height: 1.5em;
+      @include breakpoint(xs) {
+        width: 500px;
+      }
+      @include breakpoint(md) {
+        font-size: 20px;
+        width: 600px;
+      }
+      @include breakpoint(lg) {
+        max-width: 500px;
+      }
     }
   }
   .wrapper-rightt {
     position: relative;
-    width: 45%;
-    height: 670px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @include breakpoint(lg) {
+      width: 45%;
+      height: 670px;
+    }
     .titlee {
       border: 1px solid #fff !important;
       position: absolute;
       margin-top: 60px;
       position: absolute;
       bottom: auto;
-      left: -18%;
       right: auto;
       color: #000;
       font-weight: 600;
@@ -135,6 +171,11 @@ onMounted(() => {
       align-items: center;
       flex-direction: column;
       box-shadow: 0 0 2px 0.8px rgba(129, 129, 129, 0.2);
+      left: 10%;
+      top: 10%;
+      @include breakpoint(lg) {
+        left: -18%;
+      }
       .title-rr {
         display: flex;
       }
@@ -145,25 +186,45 @@ onMounted(() => {
     }
     .img {
       width: 500px;
-      height: 720px;
       border-radius: 20px;
+      @include breakpoint(lg) {
+        height: 600px;
+      }
+      @include breakpoint(xl) {
+        width: 100%;
+        height: 720px;
+      }
     }
     .calendarr {
       position: absolute;
-      top: 25%;
-      right: -20%;
-      width: 340px;
-      height: 150px;
       background-color: #ffd8cbaf;
       border-radius: 2rem;
       box-shadow: 0 0 2px 0.8px rgba(129, 129, 129, 0.2);
+      top: 25%;
+      right: 10%;
+      width: 200px;
+      height: 120px;
+      @include breakpoint(md){
+        height: 140px;
+        width: 300px;
+      }
+      @include breakpoint(lg) {
+        right: 10px;
+        width: 340px;
+        top: 20%;
+        height: 150px;
+      }
+      @include breakpoint(xl) {
+        top: 25%;
+        right: -20%;
+      }
       .month-yearr {
-        padding: 25px 20px;
-        font-size: 18px;
         text-transform: capitalize;
         display: block !important;
         height: 30px;
         color: #000;
+        font-size: 18px;
+        padding: 25px 20px;
       }
       .weekk {
         padding: 10px 20px;
@@ -184,6 +245,7 @@ onMounted(() => {
         }
       }
       .active {
+        width: 40px;
         background-color: #fe5722;
         color: #fff !important;
         font-weight: 600 !important;

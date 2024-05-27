@@ -20,13 +20,24 @@ const modules = [Autoplay, Pagination, FreeMode];
 
     <Swiper
       :modules="modules"
-      :slides-per-view="3"
+      :slides-per-view="1"
       :space-between="20"
       :autoplay="{
         delay: 1500,
       }"
       class="swiper"
       :loop="true"
+      :breakpoints="{
+        '640': {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        '1024': {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+       
+      }"
     >
       <SwiperSlide class="slide"
         ><img src="~/assets/images/1.jpg" alt="" />

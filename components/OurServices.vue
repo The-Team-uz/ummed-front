@@ -57,7 +57,6 @@ const { t } = useI18n();
         </div>
       </div>
       <div
-        data-w-id="60546b75-6273-7900-604e-82cf065e7a20"
         style="opacity: 1"
         class="home-contacts-content"
       >

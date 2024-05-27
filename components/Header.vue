@@ -68,33 +68,39 @@ window?.addEventListener("click", (e: Event) => {
           </div>
         </div>
       </nav>
-      <div
-        class="nav-dropdown-toggle w-dropdown-toggle"
-        style="position: relative"
-        id="language-bar"
-      >
-        <p class="nav-item-title" @click="isVisible = !isVisible">
-          {{ t(currentLang) }}
-          <i class="fa-solid fa-chevron-down"></i>
-        </p>
-        <div v-if="isVisible" class="languages_action">
-          <div
-            class="languages__action-item nav-item-title"
-            @click="setLang('ru')"
+      <div style="display: flex; align-items: center;">
+        <div
+          class="nav-dropdown-toggle w-dropdown-toggle"
+          style="position: relative"
+          id="language-bar"
+        >
+          <p
+            class="nav-item-title"
+            @click="isVisible = !isVisible"
+            v-if="currentLang"
           >
-            Русский
-          </div>
-          <div
-            class="languages__action-item nav-item-title"
-            @click="setLang('uz')"
-          >
-            O'zbekcha
+            {{ t(currentLang) }}
+            <i class="fa-solid fa-chevron-down"></i>
+          </p>
+          <div v-if="isVisible" class="languages_action">
+            <div
+              class="languages__action-item nav-item-title"
+              @click="setLang('ru')"
+            >
+              Русский
+            </div>
+            <div
+              class="languages__action-item nav-item-title"
+              @click="setLang('uz')"
+            >
+              O'zbekcha
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="menu-button w-nav-button" role="button" @click="open">
-        <img src="~/assets/images/gamburger.svg" class="image-burger" />
+        <div class="menu-button w-nav-button" role="button" @click="open">
+          <img src="~/assets/images/gamburger.svg" class="image-burger" />
+        </div>
       </div>
 
       <div v-if="isOpen" class="w-nav-overlay" @click="close">
@@ -158,5 +164,8 @@ window?.addEventListener("click", (e: Event) => {
   .languages__action-item:hover {
     background-color: #f3f3f3;
   }
+}
+.fa-chevron-down {
+  font-size: 12px;
 }
 </style>

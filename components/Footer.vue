@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const { t } = useI18n();
+</script>
+
 <template>
   <footer class="footer-two" style="margin-top: 150px">
     <div class="footer-upper-section container">
@@ -70,24 +74,26 @@
         </div>
 
         <div>
-          <div class="footer-heading">Часы работы</div>
+          <div class="footer-heading">{{ t("worktime") }}</div>
           <div class="opening-hours-wrapper">
             <div class="opening-hours-item">
-              <div class="opening-hours-text-two">Пн - Сб</div>
+              <div class="opening-hours-text-two">{{ t("workdays") }}</div>
               <div class="opening-hours-text-two">09:00 - 20:00</div>
             </div>
-            <div class="opening-hours-text-two">Обед 13:00 - 14:00</div>
+            <div class="opening-hours-text-two">
+              {{ t("obed") }} 13:00 - 14:00
+            </div>
             <div class="opening-hours-item">
-              <div class="opening-hours-text-two">Воскресенье выходной</div>
+              <div class="opening-hours-text-two">{{ t("freeday") }}</div>
             </div>
           </div>
         </div>
 
         <div>
-          <div class="footer-heading">Контакт</div>
+          <div class="footer-heading">{{ t("contact") }}</div>
           <div class="footer-contact-wrapper">
             <p class="footer-text-two">
-              Узбекистан, г.Ташкент, ул. Ниязова, дом 1
+              {{ t("location") }}
             </p>
             <a href="tel:+1500321852789" class="footer-text-link-two">
               +998 95 501 07 07
@@ -105,7 +111,7 @@
       <div class="w-layout-blockcontainer container-fluid w-container">
         <div class="footer-line-two"></div>
         <div class="footer-copyright-text-two">
-          © “Ummed”, 2024 - Все права защищены
+          © “Ummed”, 2024 - {{ t("footer") }}
         </div>
       </div>
     </div>
@@ -124,7 +130,5 @@
     </div> -->
   </footer>
 </template>
-
-<script setup></script>
 
 <style lang="scss" scoped></style>

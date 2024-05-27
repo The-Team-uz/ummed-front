@@ -1,41 +1,5 @@
-<template>
-  <div class="wrapperr nav-container" data-aos="fade-up">
-    <div class="wrapper-leftt">
-      <div class="title-11">
-        Расширение возможностей здоровья и благополучия
-      </div>
-      <div class="title-22">
-        Наша миссия — дать людям возможность заботиться о своем здоровье
-        посредством высококачественных, надежных и инновационных медицинских
-        изделий.
-      </div>
-    </div>
-    <div class="wrapper-rightt">
-      <div class="titlee">
-        <div v-for="i in 3" class="title-rr">
-          <div class="p">ummed</div>
-          <span>®</span>
-        </div>
-      </div>
-      <img src="~/assets/images/asbob.jpg" alt="" class="img" />
-      <div class="calendarr">
-        <div class="month-yearr">{{ month }},&nbsp;{{ year }}</div>
-        <div class="weekk">
-          <div
-            class="weekdayy"
-            v-for="i in week"
-            :class="i.status == 'true' ? 'active' : ''"
-          >
-            <div class="dayy">{{ i.day }}</div>
-            <div class="datee">{{ i.date }}</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup>
+const { t } = useI18n();
 const day = ref("");
 const month = ref("");
 const weekday = ref("");
@@ -53,7 +17,7 @@ const updateTime = () => {
 };
 
 const fillWeekDates = (currentDate) => {
-  const daysOfWeek = ["Пнд", "Втр", "Срд", "Чтв", "Птн", "Сбт", "Вск"];
+  const daysOfWeek = ["mon", "thu", "wen", "thr", "fri", "sat", "sun"];
   const currentDayIndex = (currentDate.getDay() + 6) % 7;
   week.value = [];
 
@@ -76,6 +40,41 @@ onMounted(() => {
   updateTime();
 });
 </script>
+
+<template>
+  <div class="wrapperr nav-container" data-aos="fade-up">
+    <div class="wrapper-leftt">
+      <div class="title-11">
+        {{ t("main-title") }}
+      </div>
+      <div class="title-22">
+        {{ t("main-text") }}
+      </div>
+    </div>
+    <div class="wrapper-rightt">
+      <div class="titlee">
+        <div v-for="i in 3" class="title-rr">
+          <div class="p">ummed</div>
+          <span>®</span>
+        </div>
+      </div>
+      <img src="~/assets/images/asbob.jpg" alt="" class="img" />
+      <div class="calendarr">
+        <div class="month-yearr">{{ t(month) }},&nbsp;{{ year }}</div>
+        <div class="weekk">
+          <div
+            class="weekdayy"
+            v-for="i in week"
+            :class="i.status == 'true' ? 'active' : ''"
+          >
+            <div class="dayy">{{ t(i.day) }}</div>
+            <div class="datee">{{ i.date }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 
 <style lang="scss" scoped>
 * {
@@ -185,7 +184,7 @@ onMounted(() => {
         }
       }
       .active {
-        background-color: #FE5722;
+        background-color: #fe5722;
         color: #fff !important;
         font-weight: 600 !important;
         border-radius: 20px;

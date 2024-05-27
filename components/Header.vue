@@ -1,5 +1,45 @@
+<script setup lang="ts">
+const { t } = useI18n();
+const isOpen = ref(false);
+const isVisible = ref(false);
+
+const open = () => {
+  document.body.style.overflow = "hidden";
+  isOpen.value = true;
+};
+const close = () => {
+  document.body.style.overflow = "auto";
+  isOpen.value = false;
+};
+const i18n = useI18n();
+const cookies = useCookie("lang", {
+  watch: true,
+});
+const currentLang = ref(cookies.value);
+
+const setLang = (lang: string) => {
+  currentLang.value = lang;
+  cookies.value = lang;
+  i18n.setLocaleCookie(lang);
+  i18n.setLocale(lang);
+  isVisible.value = false;
+};
+window?.addEventListener("click", (e: Event) => {
+  const target = e.target as HTMLElement;
+  if (!target.closest("#language-bar")) {
+    isVisible.value = false;
+  }
+});
+</script>
+
 <template>
   <div data-collapse="medium" role="banner" class="navbar w-nav">
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
     <div class="nav-menu-wrapper">
       <a href="/" class="brand w-nav-brand" aria-label="home"
         ><img src="~/assets/images/logo.png" loading="lazy" height="100" alt=""
@@ -8,36 +48,48 @@
         <div class="menu-wrap">
           <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
             <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-              <p class="nav-item-title">Главная</p>
+              <p class="nav-item-title">{{ t("main-menu") }}</p>
             </div>
           </div>
           <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
             <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-              <p class="nav-item-title">Каталог</p>
+              <p class="nav-item-title">{{ t("katalog") }}</p>
             </div>
           </div>
           <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
             <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-              <p class="nav-item-title">О нас</p>
+              <p class="nav-item-title">{{ t("about") }}</p>
             </div>
           </div>
           <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
             <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-              <p class="nav-item-title">Контакты</p>
+              <p class="nav-item-title">{{ t("contacts") }}</p>
             </div>
           </div>
         </div>
       </nav>
-      <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-        <p class="nav-item-title" @click="isVisible = !isVisible">Русский</p>
+      <div
+        class="nav-dropdown-toggle w-dropdown-toggle"
+        style="position: relative"
+        id="language-bar"
+      >
+        <p class="nav-item-title" @click="isVisible = !isVisible">
+          {{ t(currentLang) }}
+          <i class="fa-solid fa-chevron-down"></i>
+        </p>
         <div v-if="isVisible" class="languages_action">
-          <div class="languages__action-item nav-item-title" >
+          <div
+            class="languages__action-item nav-item-title"
+            @click="setLang('ru')"
+          >
             Русский
           </div>
-          <div class="languages__action-item nav-item-title" >
+          <div
+            class="languages__action-item nav-item-title"
+            @click="setLang('uz')"
+          >
             O'zbekcha
           </div>
-          
         </div>
       </div>
 
@@ -66,22 +118,22 @@
           <div class="menu-wrap">
             <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
               <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-                <p class="nav-item-title">Главная</p>
+                <p class="nav-item-title">{{ t("main-menu") }}</p>
               </div>
             </div>
             <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
               <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-                <p class="nav-item-title">Каталог</p>
+                <p class="nav-item-title">{{ t("katalog") }}</p>
               </div>
             </div>
             <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
               <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-                <p class="nav-item-title">О нас</p>
+                <p class="nav-item-title">{{ t("about") }}</p>
               </div>
             </div>
             <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
               <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-                <p class="nav-item-title">Контакты</p>
+                <p class="nav-item-title">{{ t("contacts") }}</p>
               </div>
             </div>
           </div>
@@ -91,17 +143,20 @@
   </div>
 </template>
 
-<script setup>
-const isOpen = ref(false);
-const isVisible = ref(false);
-const open = () => {
-  document.body.style.overflow = "hidden";
-  isOpen.value = true;
-};
-const close = () => {
-  document.body.style.overflow = "auto";
-  isOpen.value = false;
-};
-</script>
-
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.languages_action {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #4444441e;
+  border-radius: 5px;
+  top: 50px;
+  right: 22px;
+  box-shadow: 0 0 2px 0.8px rgba(129, 129, 129, 0.2);
+  .languages__action-item {
+    padding: 5px;
+  }
+  .languages__action-item:hover {
+    background-color: #f3f3f3;
+  }
+}
+</style>

@@ -1,11 +1,13 @@
+<script setup lang="ts">
+const { t } = useI18n();
+</script>
+
 <template>
   <div class="section without-bottom-spacing">
     <div class="section-title-wrapper">
-      <h2 id="provide-assistance">Наша приверженность гибкости</h2>
+      <h2 id="provide-assistance">{{ t("video-title") }}</h2>
       <div class="paragraph-large">
-        Наша приверженность гибкости Имея давние деловые связи с
-        производителями, мы стремимся предоставлять оптимальные ценовые условия,
-        как для новых, так и для постоянных клиентов.
+        {{ t("video-text") }}
       </div>
     </div>
     <div class="video-wrap" data-aos="fade-up">

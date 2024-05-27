@@ -1,10 +1,14 @@
+<script setup lang="ts">
+const { t } = useI18n();
+</script>
+
 <template>
   <section class="section overflow-hidden" data-aos="fade-up">
-    <h1 class="mainword">Медицинские товары оптом и в розницу</h1>
+    <h1 class="mainword">{{ t("routes-title-main") }}</h1>
     <div class="services-carts">
       <div class="light-bgr-block">
         <div class="my-routes">
-          <h2>Партнёрам</h2>
+          <h2>{{ t("route1-title") }}</h2>
           <div class="image-right spacing">
             <img
               src="../assets/images/uzum.jpg"
@@ -14,14 +18,14 @@
             />
           </div>
         </div>
-        <a href="https://uzum.uz/ru/ummed" class="primary-button w-button"
-          >Подробнее</a
-        >
+        <a href="https://uzum.uz/ru/ummed" class="primary-button w-button">{{
+          t("learn-more")
+        }}</a>
       </div>
 
       <div class="light-bgr-block">
         <div class="my-routes">
-          <h2>Потребителям</h2>
+          <h2>{{ t("route2-title") }}</h2>
           <div class="image-right spacing">
             <img
               src="../assets/images/partner.jpg"
@@ -31,15 +35,13 @@
             />
           </div>
         </div>
-        <a href="https://linktr.ee/ummeduz" class="primary-button w-button"
-          >Подробнее</a
-        >
+        <a href="https://linktr.ee/ummeduz" class="primary-button w-button">{{
+          t("learn-more")
+        }}</a>
       </div>
     </div>
   </section>
 </template>
-
-<script setup></script>
 
 <style lang="scss" scoped>
 .section {

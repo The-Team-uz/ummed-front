@@ -3858,7 +3858,6 @@ blockquote {
   background-color: var(--primary);
   color: var(--white);
   text-align: center;
-  text-transform: capitalize;
   border-radius: 55px;
   flex: none;
   justify-content: center;
@@ -4065,7 +4064,6 @@ blockquote {
 
 .nav-item-title {
   color: var(--midnight-blue);
-  text-transform: capitalize;
   font-weight: 500;
 }
 

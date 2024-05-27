@@ -2,7 +2,29 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   plugins: ["~/plugins/element-plus.js"],
-  modules: ["nuxt-aos"],
+  modules: ["nuxt-aos", "@nuxtjs/i18n"],
+  i18n: {
+    locales: [
+      {
+        code: "ru",
+        file: "ru.json",
+      },
+      {
+        code: "uz",
+        file: "uz.json",
+      },
+    ],
+    langDir: "locales/",
+    strategy: "no_prefix",
+    compilation: {
+      strictMessage: false,
+    },
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "lang",
+      redirectOn: "root",
+    },
+  },
   aos: {
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
     startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on

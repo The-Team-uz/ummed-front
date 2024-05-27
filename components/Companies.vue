@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import { Swiper, SwiperSlide } from "swiper/vue";
-
 import "swiper/css";
-
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-
+import { Swiper, SwiperSlide } from "swiper/vue";
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
+
+const { t } = useI18n();
 const modules = [Autoplay, Pagination, FreeMode];
 </script>
 <template>
@@ -14,8 +13,7 @@ const modules = [Autoplay, Pagination, FreeMode];
     <div class="base-container w-container">
       <div class="section-title-wrapper">
         <h2 id="provide-assistance">
-          Партнерские отношения, совместная работа, объединение знаний и опыта
-          обеспечивают рост и развитие
+          {{ t("company-title") }}
         </h2>
       </div>
     </div>

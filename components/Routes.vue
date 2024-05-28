@@ -9,35 +9,37 @@ const { t } = useI18n();
       <div class="light-bgr-block">
         <div class="my-routes">
           <p class="title-11">{{ t("route2-title") }}</p>
-          <!-- <div class="image-right spacing"> -->
           <img
             src="../assets/images/uzum.jpg"
             loading="lazy"
             alt="Uzum image"
             class="image-cover"
           />
-          <!-- </div> -->
         </div>
-        <a href="https://uzum.uz/ru/ummed" class="primary-button w-button">{{
-          t("learn-more")
-        }}</a>
+        <a
+          href="https://uzum.uz/ru/ummed"
+          target="_blank"
+          class="primary-button w-button"
+          >{{ t("learn-more") }}</a
+        >
       </div>
 
       <div class="light-bgr-block">
         <div class="my-routes">
           <p class="title-11">{{ t("route1-title") }}</p>
-          <!-- <div class="image-right spacing"> -->
           <img
             src="../assets/images/partner.jpg"
             loading="lazy"
             alt=""
             class="image-cover"
           />
-          <!-- </div> -->
         </div>
-        <a href="https://linktr.ee/ummeduz" class="primary-button w-button">{{
-          t("learn-more")
-        }}</a>
+        <a
+          href="https://linktr.ee/ummeduz"
+          target="_blank"
+          class="primary-button w-button"
+          >{{ t("learn-more") }}</a
+        >
       </div>
     </div>
   </section>

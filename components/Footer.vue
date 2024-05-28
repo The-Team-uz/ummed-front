@@ -119,8 +119,9 @@ const { t } = useI18n();
         loading="lazy"
         alt="Footer Highlighter Shape 1"
         class="footer-highlighter-shape-one"
-      /><img
-        src="https://assets-global.website-files.com/6551ed212e2ea32fb46bb7c8/6558423457c432bd2be26543_highlighter-shape-4.svg"
+      />
+      <img
+        src="../assets/images/image.png"
         loading="lazy"
         alt="Footer Highlighter Shape 2"
         class="footer-highlighter-shape-2"

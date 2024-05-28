@@ -41,68 +41,73 @@ window?.addEventListener("click", (e: Event) => {
     />
 
     <div class="nav-menu-wrapper">
-      <a href="/" class="brand w-nav-brand" aria-label="home"
-        ><img src="~/assets/images/logo.png" loading="lazy" height="100" alt=""
-      /></a>
-      <nav role="navigation" class="nav-menu w-nav-menu">
-        <div class="menu-wrap">
-          <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
-            <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-              <p class="nav-item-title">{{ t("main-menu") }}</p>
+      <div class="header-container">
+        <a href="/" class="brand w-nav-brand" aria-label="home"
+          ><img
+            src="~/assets/images/logo.png"
+            loading="lazy"
+            height="100"
+            alt=""
+        /></a>
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <div class="menu-wrap">
+            <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
+              <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
+                <p class="nav-item-title">{{ t("main-menu") }}</p>
+              </div>
+            </div>
+            <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
+              <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
+                <p class="nav-item-title">{{ t("katalog") }}</p>
+              </div>
+            </div>
+            <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
+              <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
+                <p class="nav-item-title">{{ t("about") }}</p>
+              </div>
+            </div>
+            <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
+              <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
+                <p class="nav-item-title">{{ t("contacts") }}</p>
+              </div>
             </div>
           </div>
-          <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
-            <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-              <p class="nav-item-title">{{ t("katalog") }}</p>
-            </div>
-          </div>
-          <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
-            <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-              <p class="nav-item-title">{{ t("about") }}</p>
-            </div>
-          </div>
-          <div class="nav-dropdown w-dropdown" style="max-width: 1200px">
-            <div class="nav-dropdown-toggle w-dropdown-toggle" role="button">
-              <p class="nav-item-title">{{ t("contacts") }}</p>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div style="display: flex; align-items: center;">
-        <div
-          class="nav-dropdown-toggle w-dropdown-toggle"
-          style="position: relative"
-          id="language-bar"
-        >
-          <p
-            class="nav-item-title"
-            @click="isVisible = !isVisible"
-            v-if="currentLang"
+        </nav>
+        <div style="display: flex; align-items: center">
+          <div
+            class="nav-dropdown-toggle w-dropdown-toggle"
+            style="position: relative"
+            id="language-bar"
           >
-            {{ t(currentLang) }}
-            <i class="fa-solid fa-chevron-down"></i>
-          </p>
-          <div v-if="isVisible" class="languages_action">
-            <div
-              class="languages__action-item nav-item-title"
-              @click="setLang('ru')"
+            <p
+              class="nav-item-title"
+              @click="isVisible = !isVisible"
+              v-if="currentLang"
             >
-              Русский
-            </div>
-            <div
-              class="languages__action-item nav-item-title"
-              @click="setLang('uz')"
-            >
-              O'zbekcha
+              {{ t(currentLang) }}
+              <i class="fa-solid fa-chevron-down"></i>
+            </p>
+            <div v-if="isVisible" class="languages_action">
+              <div
+                class="languages__action-item nav-item-title"
+                @click="setLang('ru')"
+              >
+                Русский
+              </div>
+              <div
+                class="languages__action-item nav-item-title"
+                @click="setLang('uz')"
+              >
+                O'zbekcha
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="menu-button w-nav-button" role="button" @click="open">
-          <img src="~/assets/images/gamburger.svg" class="image-burger" />
+          <div class="menu-button w-nav-button" role="button" @click="open">
+            <img src="~/assets/images/gamburger.svg" class="image-burger" />
+          </div>
         </div>
       </div>
-
       <div v-if="isOpen" class="w-nav-overlay" @click="close">
         <nav role="navigation" @click.stop.prevent>
           <div class="tablet-menu">
@@ -150,6 +155,13 @@ window?.addEventListener("click", (e: Event) => {
 </template>
 
 <style lang="scss" scoped>
+.header-container {
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
 .languages_action {
   position: absolute;
   background-color: #fff;

@@ -3,8 +3,8 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <footer class="footer-two" style="margin-top: 150px">
-    <div class="footer-upper-section container">
+  <footer class="footer-two">
+    <div class="footer-upper-section container-footer">
       <div class="footer-flex">
         <div class="footer-about-column">
           <a href="/" class="navbar-brand w-nav-brand">
@@ -131,4 +131,15 @@ const { t } = useI18n();
   </footer>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container-footer {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer-two {
+  padding: 0 10px;
+  margin-top: 150px;
+  width: 100%;
+}
+</style>

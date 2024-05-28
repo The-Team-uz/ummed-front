@@ -5,7 +5,7 @@ const { t } = useI18n();
 <template>
   <div
     id="services"
-    class="section without-bottom-spacing"
+    class="services"
     style="margin-top: 150px"
   >
     <div class="home-contacts-wrapper about">
@@ -56,19 +56,53 @@ const { t } = useI18n();
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 1"
-        class="home-contacts-content"
-      >
+      <div style="opacity: 1" class="home-contacts-content">
         <div class="contacts-title">
-          <h2>{{ t("service-title") }}</h2>
+          <p class="title-11">{{ t("service-title") }}</p>
         </div>
-        <p class="paragraph-large spacing">
+        <p class="title-22">
           {{ t("service-text") }}
         </p>
       </div>
     </div>
   </div>
 </template>
+<style scoped lang="scss">
+@import "~/assets/_mixins.scss";
+.services{
+  width: 100%;
+  padding: 0 10px;
+}
+.title-11 {
+  font-weight: 700 !important;
+  color: #000 !important;
+  line-height: 1em !important;
+  font-size: 22px !important;
+  width: 100% !important;
+  // text-align: center;
+  margin-bottom: 30px;
+  @include breakpoint(xs) {
+    font-size: 25px !important;
+  }
 
-<style lang="scss" scoped></style>
+  @include breakpoint(md) {
+    font-size: 30px !important;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 35px !important;
+  }
+}
+.title-22 {
+  color: #676c80;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+  width: 100% !important;
+  // text-align: center;
+  font-size: 14px;
+  @include breakpoint(md) {
+    font-size: 20px;
+  }
+}
+</style>

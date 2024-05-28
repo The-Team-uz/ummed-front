@@ -3,13 +3,9 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div class="section without-bottom-spacing">
-    <div class="section-title-wrapper">
-      <h2 id="provide-assistance">{{ t("video-title") }}</h2>
-      <div class="paragraph-large">
-        {{ t("video-text") }}
-      </div>
-    </div>
+  <div class="section">
+    <p class="title-11">{{ t("video-title") }}</p>
+    <p class="title-22">{{ t("video-text") }}</p>
     <div class="video-wrap" data-aos="fade-up">
       <div class="background-video w-background-video w-background-video-atom">
         <video
@@ -29,7 +25,52 @@ const { t } = useI18n();
 </template>
 
 <style lang="scss" scoped>
+@import "~/assets/_mixins.scss";
 .section {
   margin-top: 150px;
+  padding: 0 10px;
+  width: 100%;
+}
+.background-video{
+  height: 250px;
+  @include breakpoint(sm){
+    height: 300px;
+  }
+  @include breakpoint(lg){
+    height: 500px;
+  }
+}
+
+.title-11 {
+  font-weight: 700 !important;
+  color: #000 !important;
+  line-height: 1em !important;
+  font-size: 22px !important;
+  width: 100% !important;
+  text-align: center;
+  margin-bottom: 30px;
+  @include breakpoint(xs) {
+    font-size: 25px !important;
+  }
+
+  @include breakpoint(md) {
+    font-size: 30px !important;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 35px !important;
+  }
+}
+.title-22 {
+  color: #676c80;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+  width: 100% !important;
+  text-align: center;
+  font-size: 14px;
+  @include breakpoint(md) {
+    font-size: 20px;
+  }
 }
 </style>

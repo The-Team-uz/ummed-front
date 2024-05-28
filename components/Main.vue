@@ -42,7 +42,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="wrapperr nav-container" data-aos="fade-up">
+  <div class="wrapperr" data-aos="fade-up">
     <div class="wrapper-leftt">
       <div class="title-11">
         {{ t("main-title") }}
@@ -85,9 +85,10 @@ onMounted(() => {
 }
 .wrapperr {
   width: 100%;
+  padding: 0 10px;
   display: block;
   @include breakpoint(lg) {
-    margin-left: 15px;
+    // margin-left: 15px;
     display: flex;
     justify-content: space-between;
   }
@@ -98,7 +99,6 @@ onMounted(() => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // justify-content: space-around;
     height: 300px;
     @include breakpoint(xs) {
       height: 400px;
@@ -106,6 +106,7 @@ onMounted(() => {
     gap: 40px;
     @include breakpoint(lg) {
       text-align: start;
+      align-items: start;
       width: calc(100% / 2);
       height: 670px;
     }
@@ -200,10 +201,10 @@ onMounted(() => {
       background-color: #ffd8cbaf;
       border-radius: 2rem;
       box-shadow: 0 0 2px 0.8px rgba(129, 129, 129, 0.2);
-      top: 25%;
+      top: 50%;
       right: 10%;
-      width: 200px;
-      height: 120px;
+      height: 140px;
+      width: 240px;
       @include breakpoint(md) {
         height: 140px;
         width: 300px;
@@ -223,16 +224,22 @@ onMounted(() => {
         display: block !important;
         height: 30px;
         color: #000;
-        font-size: 18px;
         padding: 25px 20px;
+        font-size: 14px;
+        @include breakpoint(md) {
+          font-size: 18px;
+        }
       }
       .weekk {
         padding: 10px 20px;
         display: flex;
         justify-content: space-between;
         text-align: center;
-        font-size: 12px;
+        font-size: 8px;
         line-height: 1.5;
+        @include breakpoint(md) {
+          font-size: 12px;
+        }
         .weekdayy {
           padding: 16px 5px;
           color: #000;
@@ -253,6 +260,24 @@ onMounted(() => {
         box-shadow: 0 0 8px 1px rgba(68, 68, 68, 0.2);
       }
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .titlee {
+    margin-top: 20px !important;
+    left: -2% !important;
+    width: 120px !important;
+    height: 60px !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+    span {
+        font-weight: 800;
+        font-size: 11px !important;
+      }
+  }
+  .calendarr {
+    right: 0% !important;
   }
 }
 </style>

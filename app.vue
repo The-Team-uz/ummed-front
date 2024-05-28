@@ -28,7 +28,7 @@ import "./assets/footer.css";
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
   width: 100%;
   display: flex;

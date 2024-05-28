@@ -9,13 +9,11 @@ const { t } = useI18n();
 const modules = [Autoplay, Pagination, FreeMode];
 </script>
 <template>
-  <div class="section about" style="margin-top: 100px">
+  <div class="section " style="margin-top: 100px">
     <div class="base-container w-container">
-      <div class="section-title-wrapper">
-        <h2 id="provide-assistance">
-          {{ t("company-title") }}
-        </h2>
-      </div>
+      <p class="title-11">
+        {{ t("company-title") }}
+      </p>
     </div>
 
     <Swiper
@@ -64,6 +62,12 @@ const modules = [Autoplay, Pagination, FreeMode];
 </template>
 
 <style lang="scss" scoped>
+@import "~/assets/_mixins.scss";
+.section{
+  width: 100%;
+  padding: 0 10px;
+}
+
 .swiper {
   width: 100%;
   .slide {
@@ -80,11 +84,32 @@ const modules = [Autoplay, Pagination, FreeMode];
     }
   }
 }
+.title-11 {
+  font-weight: 700 !important;
+  color: #000 !important;
+  line-height: 1em !important;
+  font-size: 22px !important;
+  width: 100% !important;
+  text-align: center;
+  margin-bottom: 30px;
+  @include breakpoint(xs) {
+    font-size: 25px !important;
+  }
+
+  @include breakpoint(md) {
+    font-size: 30px !important;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 35px !important;
+  }
+}
+
+
 </style>
 <style>
 .swiper-wrapper {
   -webkit-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
 }
-
 </style>

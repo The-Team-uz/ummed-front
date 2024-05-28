@@ -9,21 +9,20 @@ const { t } = useI18n();
 const modules = [Autoplay, Pagination, FreeMode];
 </script>
 <template>
-  <div class="section about" style="margin-top: 100px">
+  <div class="section " style="margin-top: 100px">
     <div class="base-container w-container">
-      <div class="section-title-wrapper">
-        <h2 id="provide-assistance">
-          {{ t("company-title") }}
-        </h2>
-      </div>
+      <p class="title-11">
+        {{ t("company-title") }}
+      </p>
     </div>
 
     <Swiper
       :modules="modules"
       :slides-per-view="1"
       :space-between="20"
+      :speed="5000"
       :autoplay="{
-        delay: 1500,
+        delay: 0,
       }"
       class="swiper"
       :loop="true"
@@ -44,7 +43,7 @@ const modules = [Autoplay, Pagination, FreeMode];
       <SwiperSlide class="slide">
         <img src="~/assets/images/2.jpg" alt="" /> </SwiperSlide
       ><SwiperSlide class="slide">
-        <img src="~/assets/images/3.jpg" alt="" /> </SwiperSlide
+        <img src="~/assets/images/3.jpg"  height="150" alt="" /> </SwiperSlide
       ><SwiperSlide class="slide">
         <img src="~/assets/images/4.jpg" alt="" /> </SwiperSlide
       ><SwiperSlide class="slide">
@@ -64,24 +63,53 @@ const modules = [Autoplay, Pagination, FreeMode];
 
 <style lang="scss" scoped>
 @import "~/assets/_mixins.scss";
+.section{
+  width: 100%;
+  padding: 0 10px;
+}
 
 .swiper {
   width: 100%;
   .slide {
-    height: 250px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fe552217;
     border-radius: 18px;
-    border: 1px solid #4444443a;
     img {
       mix-blend-mode: multiply;
-      width: 180px;
+      width: 230px;
       object-fit: contain;
     }
   }
 }
+.title-11 {
+  font-weight: 700 !important;
+  color: #000 !important;
+  line-height: 1em !important;
+  font-size: 22px !important;
+  width: 100% !important;
+  text-align: center;
+  margin-bottom: 30px;
+  @include breakpoint(xs) {
+    font-size: 25px !important;
+  }
+
+  @include breakpoint(md) {
+    font-size: 30px !important;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 35px !important;
+  }
+}
 
 
+</style>
+<style>
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
 </style>

@@ -1,7 +1,14 @@
 <script lang="ts" setup>
 import "./assets/main.css";
 import "./assets/footer.css";
+
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - Ummed` : "Ummed";
+  },
+});
 </script>
+
 <template>
   <div>
     <link
@@ -30,9 +37,14 @@ import "./assets/footer.css";
 .container {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+</style>
+
+<style>
+* {
+  scroll-behavior: smooth !important ;
 }
 </style>

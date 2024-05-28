@@ -3,12 +3,13 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <footer class="footer-two">
-    <div class="footer-upper-section container">
+  <footer class="footer-two" id="footer">
+    <div class="footer-upper-section container-footer">
       <div class="footer-flex">
         <div class="footer-about-column">
           <a href="/" class="navbar-brand w-nav-brand">
             <img
+              style=""
               src="../assets/images/ummedlogo.png"
               loading="lazy"
               alt="Brand Logo"
@@ -16,10 +17,7 @@ const { t } = useI18n();
           </a>
 
           <div>
-            <p class="footer-about-text-two">
-              From wellness tips to expert advice, we're here to support your
-              journey to a healthier you.<br />
-            </p>
+            <p class="footer-about-text-two">{{ t("footer-title") }}<br /></p>
             <div class="footer-soocial-link-wrapper">
               <a
                 href="https://www.instagram.com/ummed_uz"
@@ -115,7 +113,7 @@ const { t } = useI18n();
         </div>
       </div>
     </div>
-    <!-- <div>
+    <div>
       <img
         src="https://assets-global.website-files.com/6551ed212e2ea32fb46bb7c8/655b135120eb4c16ccf8b1f1_highlighter-shape-11.svg"
         loading="lazy"
@@ -127,13 +125,19 @@ const { t } = useI18n();
         alt="Footer Highlighter Shape 2"
         class="footer-highlighter-shape-2"
       />
-    </div> -->
+    </div>
   </footer>
 </template>
 
 <style lang="scss" scoped>
+.container-footer {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
 .footer-two {
+  padding: 0 10px;
   margin-top: 150px;
-  padding: 0 30px;
+  width: 100%;
 }
 </style>

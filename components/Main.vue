@@ -42,7 +42,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="wrapperr nav-container" data-aos="fade-up">
+  <div class="wrapperr" data-aos="fade-up">
     <div class="wrapper-leftt">
       <div class="title-11">
         {{ t("main-title") }}
@@ -85,9 +85,10 @@ onMounted(() => {
 }
 .wrapperr {
   width: 100%;
+  padding: 0 10px;
   display: block;
   @include breakpoint(lg) {
-    margin-left: 15px;
+    // margin-left: 15px;
     display: flex;
     justify-content: space-between;
   }
@@ -105,6 +106,7 @@ onMounted(() => {
     gap: 40px;
     @include breakpoint(lg) {
       text-align: start;
+      align-items: start;
       width: calc(100% / 2);
       height: 670px;
     }
@@ -171,7 +173,7 @@ onMounted(() => {
       flex-direction: column;
       box-shadow: 0 0 2px 0.8px rgba(129, 129, 129, 0.2);
       left: 10%;
-      top: 10%;
+      top: 23%;
       @include breakpoint(lg) {
         left: -18%;
       }
@@ -214,7 +216,7 @@ onMounted(() => {
         height: 150px;
       }
       @include breakpoint(xl) {
-        top: 25%;
+        top: 60%;
         right: -20%;
       }
       .month-yearr {
@@ -275,7 +277,7 @@ onMounted(() => {
       }
   }
   .calendarr {
-    right: -5% !important;
+    right: 0% !important;
   }
 }
 </style>

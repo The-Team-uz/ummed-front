@@ -1,4 +1,5 @@
 {
+  "footer-title": "Obuna bo'ling va bizning jamoamizning qismi bo'ling!",
   "May": "May",
   "June": "Iyun",
   "July": "Iyul",
@@ -38,8 +39,8 @@
   "service-text": "Biz taniqli import va mahalliy tibbiy iste'mol buyumlari va tibbiy asboblarni ishlab chiqaruvchilarni tarqatamiz: PALMA GROUP, ELTA, ATLETIKA, STERILIZATSIYA. Ishlab chiqaruvchilar bilan mustahkam munosabatlar, yangi mahsulotlar va yo'nalishlarni qidirish hamkorlarimizga yanada zamonaviy va samarali echimlarni taklif qilish imkonini beradi.",
   "company-title": "Hamkorlik, bilim va tajribani birlashtirish o'sish va rivojlanishga imkon beradi",
   "routes-title-main": "Tibbiy mahsulotlar ulgurji va chakana savdo",
-  "route1-title": "Hamkorlar",
-  "route2-title": "Iste'molchilar",
+  "route1-title": "Hamkorlar uchun",
+  "route2-title": "Iste'molchilar uchun",
   "learn-more": "Ko'proq o'rganing",
   "worktime": "Ish vaqti",
   "workdays": "Du - Sha",

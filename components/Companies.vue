@@ -22,8 +22,9 @@ const modules = [Autoplay, Pagination, FreeMode];
       :modules="modules"
       :slides-per-view="1"
       :space-between="20"
+      :speed="5000"
       :autoplay="{
-        delay: 1500,
+        delay: 0,
       }"
       class="swiper"
       :loop="true"
@@ -36,7 +37,6 @@ const modules = [Autoplay, Pagination, FreeMode];
           slidesPerView: 3,
           spaceBetween: 40,
         },
-       
       }"
     >
       <SwiperSlide class="slide"
@@ -67,18 +67,24 @@ const modules = [Autoplay, Pagination, FreeMode];
 .swiper {
   width: 100%;
   .slide {
-    height: 250px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fe552217;
     border-radius: 18px;
-    border: 1px solid #4444443a;
     img {
       mix-blend-mode: multiply;
-      width: 180px;
+      width: 150px;
       object-fit: contain;
     }
   }
 }
+</style>
+<style>
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
 </style>

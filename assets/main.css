@@ -7478,6 +7478,7 @@ blockquote {
   grid-column-gap: 30px;
   width: 100%;
   display: flex;
+  padding: 2px;
 }
 
 .light-bgr-block {
@@ -7490,6 +7491,7 @@ blockquote {
   padding: 20px 30px 30px;
   display: flex;
   overflow: hidden;
+  box-shadow: 0 0 2px 0.8px rgba(129, 129, 129, 0.2);
 }
 
 .line-horizontal {

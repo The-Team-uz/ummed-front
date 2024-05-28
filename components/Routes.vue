@@ -51,6 +51,7 @@ const { t } = useI18n();
 .image-cover {
   border-radius: 5px;
   margin-top: 10px;
+  mix-blend-mode: multiply;
 }
 
 .my-routes {

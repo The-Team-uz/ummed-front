@@ -204,7 +204,7 @@ onMounted(() => {
       right: 10%;
       width: 200px;
       height: 120px;
-      @include breakpoint(md){
+      @include breakpoint(md) {
         height: 140px;
         width: 300px;
       }

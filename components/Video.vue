@@ -4,8 +4,11 @@ const { t } = useI18n();
 
 <template>
   <div class="section-1">
-    <p class="title-11">{{ t("video-title") }}</p>
-    <p class="title-22">{{ t("video-text") }}</p>
+    <div class="t">
+      <p class="title-11">{{ t("video-title") }}</p>
+
+      <p class="title-22">{{ t("video-text") }}</p>
+    </div>
     <div class="" data-aos="fade-up">
       <div class="background-video w-background-video w-background-video-atom">
         <video
@@ -31,16 +34,22 @@ const { t } = useI18n();
   width: 100%;
   margin: 0 auto;
 }
-.background-video{
+.background-video {
   height: 250px;
-  @include breakpoint(sm){
+  @include breakpoint(sm) {
     height: 300px;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     height: 500px;
   }
 }
-
+.t{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .title-11 {
   font-weight: 700 !important;
   color: #000 !important;
@@ -66,11 +75,17 @@ const { t } = useI18n();
   margin-top: -20px;
   margin-bottom: 30px;
   line-height: 1.5em;
-  width: 100% !important;
+  // width: 100% !important;
+  // width: 80%;
+
   text-align: center;
   font-size: 14px;
+  @include breakpoint(xs){
+    width: 500px;
+  }
   @include breakpoint(md) {
     font-size: 20px;
+    width: 780px;
   }
 }
 </style>

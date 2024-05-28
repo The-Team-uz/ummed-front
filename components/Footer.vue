@@ -17,8 +17,7 @@ const { t } = useI18n();
 
           <div>
             <p class="footer-about-text-two">
-              From wellness tips to expert advice, we're here to support your
-              journey to a healthier you.<br />
+              {{ t('footer-title') }}<br />
             </p>
             <div class="footer-soocial-link-wrapper">
               <a

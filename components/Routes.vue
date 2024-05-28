@@ -8,7 +8,7 @@ const { t } = useI18n();
     <div class="services-carts">
       <div class="light-bgr-block">
         <div class="my-routes">
-          <p class="title-11">{{ t("route1-title") }}</p>
+          <p class="title-11">{{ t("route2-title") }}</p>
           <!-- <div class="image-right spacing"> -->
           <img
             src="../assets/images/uzum.jpg"
@@ -25,7 +25,7 @@ const { t } = useI18n();
 
       <div class="light-bgr-block">
         <div class="my-routes">
-          <p class="title-11">{{ t("route2-title") }}</p>
+          <p class="title-11">{{ t("route1-title") }}</p>
           <!-- <div class="image-right spacing"> -->
           <img
             src="../assets/images/partner.jpg"

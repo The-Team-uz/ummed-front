@@ -43,7 +43,7 @@ const modules = [Autoplay, Pagination, FreeMode];
       <SwiperSlide class="slide">
         <img src="~/assets/images/2.jpg" alt="" /> </SwiperSlide
       ><SwiperSlide class="slide">
-        <img src="~/assets/images/3.jpg" alt="" /> </SwiperSlide
+        <img src="~/assets/images/3.jpg"  height="150" alt="" /> </SwiperSlide
       ><SwiperSlide class="slide">
         <img src="~/assets/images/4.jpg" alt="" /> </SwiperSlide
       ><SwiperSlide class="slide">
@@ -79,7 +79,7 @@ const modules = [Autoplay, Pagination, FreeMode];
     border-radius: 18px;
     img {
       mix-blend-mode: multiply;
-      width: 150px;
+      width: 230px;
       object-fit: contain;
     }
   }

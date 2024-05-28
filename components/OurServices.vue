@@ -11,45 +11,45 @@ const { t } = useI18n();
     <div class="home-contacts-wrapper about">
       <div data-aos="fade-down" class="block-benefits about">
         <div class="row-benefit">
-          <div class="image-row">
+          <!-- <div class="image-row"> -->
             <img
               src="../assets/images/25years.webp"
               loading="lazy"
-              width="34"
-              height="34"
+              width="80"
+              height="80"
               alt=""
             />
-          </div>
+          <!-- </div> -->
           <div class="text-row">
             <h4>{{ t("service1-title") }}</h4>
             <div>{{ t("service1-text") }}</div>
           </div>
         </div>
         <div class="row-benefit">
-          <div class="image-row">
+          <!-- <div class="image-row"> -->
             <img
               src="../assets/images/fast.png"
               loading="lazy"
-              width="34"
-              height="34"
+              width="80"
+              height="80"
               alt=""
             />
-          </div>
+          <!-- </div> -->
           <div class="text-row">
             <h4>{{ t("service2-title") }}</h4>
             <div>{{ t("service2-text") }}</div>
           </div>
         </div>
         <div class="row-benefit">
-          <div class="image-row">
+          <!-- <div class="image-row"> -->
             <img
               src="../assets/images/proteam.jpg"
               loading="lazy"
-              width="34"
-              height="34"
+              width="80"
+              height="80"
               alt=""
             />
-          </div>
+          <!-- </div> -->
           <div class="text-row">
             <h4>{{ t("service3-title") }}</h4>
             <div>{{ t("service3-text") }}</div>

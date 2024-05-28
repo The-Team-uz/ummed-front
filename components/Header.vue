@@ -161,7 +161,7 @@ window?.addEventListener("click", (e: Event) => {
   background-color: #fff;
   border: 1px solid #4444441e;
   border-radius: 5px;
-  top: 50px;
+  top: 60px;
   right: 22px;
   box-shadow: 0 0 2px 0.8px rgba(129, 129, 129, 0.2);
   .languages__action-item {

@@ -82,23 +82,6 @@ const modules = [Autoplay, Pagination, FreeMode];
     }
   }
 }
-@media (max-width: 500px) {
-  #provide-assistance {
-    font-weight: 700;
-    color: #000;
-    line-height: 1em;
-    font-size: 30px;
-    @include breakpoint(xs) {
-      width: 500px;
-      font-size: 40px;
-    }
-    @include breakpoint(md) {
-      font-size: 60px;
-      width: 800px;
-    }
-    @include breakpoint(lg) {
-      width: 500px;
-    }
-  }
-}
+
+
 </style>

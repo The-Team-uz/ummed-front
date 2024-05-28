@@ -3,10 +3,10 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div class="section">
+  <div class="section-1">
     <p class="title-11">{{ t("video-title") }}</p>
     <p class="title-22">{{ t("video-text") }}</p>
-    <div class="video-wrap" data-aos="fade-up">
+    <div class="" data-aos="fade-up">
       <div class="background-video w-background-video w-background-video-atom">
         <video
           autoplay="true"
@@ -26,10 +26,10 @@ const { t } = useI18n();
 
 <style lang="scss" scoped>
 @import "~/assets/_mixins.scss";
-.section {
-  margin-top: 150px;
-  padding: 0 10px;
+.section-1 {
+  padding: 150px 10px 0;
   width: 100%;
+  margin: 0 auto;
 }
 .background-video{
   height: 250px;

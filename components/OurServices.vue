@@ -6,10 +6,10 @@ const { t } = useI18n();
   <div
     id="services"
     class="services"
-    style="margin-top: 150px"
+    style="padding-top: 150px"
   >
     <div class="home-contacts-wrapper about">
-      <div data-aos="fade-left" class="block-benefits about">
+      <div data-aos="fade-down" class="block-benefits about">
         <div class="row-benefit">
           <div class="image-row">
             <img
@@ -56,7 +56,7 @@ const { t } = useI18n();
           </div>
         </div>
       </div>
-      <div style="opacity: 1" class="home-contacts-content">
+      <div data-aos="fade-up" style="opacity: 1" class="home-contacts-content">
         <div class="contacts-title">
           <p class="title-11">{{ t("service-title") }}</p>
         </div>

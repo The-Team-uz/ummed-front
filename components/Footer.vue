@@ -3,8 +3,8 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <footer class="footer-two">
-    <div class="footer-upper-section container-footer">
+  <footer class="footer-two" id="footer">
+    <div class="footer-upper-section container-footer" >
       <div class="footer-flex">
         <div class="footer-about-column">
           <a href="/" class="navbar-brand w-nav-brand">

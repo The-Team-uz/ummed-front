@@ -35,3 +35,9 @@ import "./assets/footer.css";
   flex-direction: column;
 }
 </style>
+
+<style>
+* {
+  scroll-behavior: smooth !important ;
+}
+</style>

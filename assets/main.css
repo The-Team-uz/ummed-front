@@ -473,7 +473,7 @@ h6 {
   line-height: 18px;
 }
 
-p {
+a {
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -2005,7 +2005,7 @@ textarea.w-select {
 }
 
 .w-nav-overlay {
-  height: 100vh;
+  height: 10000px;
   width: 100% !important;
   background-color: #00000050 !important;
   display: flex !important;
@@ -4067,6 +4067,7 @@ blockquote {
 .nav-item-title {
   color: var(--midnight-blue);
   font-weight: 500;
+  padding: 10px 0;
 }
 
 .nav-item-title:hover {

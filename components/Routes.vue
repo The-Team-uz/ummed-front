@@ -3,19 +3,19 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <section class="section overflow-hidden" data-aos="fade-up">
+  <section class="section overflow-hidden" data-aos="fade-up" id="katalog">
     <p class="title-11">{{ t("routes-title-main") }}</p>
     <div class="services-carts">
       <div class="light-bgr-block">
         <div class="my-routes">
           <p class="title-11">{{ t("route1-title") }}</p>
           <!-- <div class="image-right spacing"> -->
-            <img
-              src="../assets/images/uzum.jpg"
-              loading="lazy"
-              alt="Uzum image"
-              class="image-cover"
-            />
+          <img
+            src="../assets/images/uzum.jpg"
+            loading="lazy"
+            alt="Uzum image"
+            class="image-cover"
+          />
           <!-- </div> -->
         </div>
         <a href="https://uzum.uz/ru/ummed" class="primary-button w-button">{{
@@ -27,12 +27,12 @@ const { t } = useI18n();
         <div class="my-routes">
           <p class="title-11">{{ t("route2-title") }}</p>
           <!-- <div class="image-right spacing"> -->
-            <img
-              src="../assets/images/partner.jpg"
-              loading="lazy"
-              alt=""
-              class="image-cover"
-            />
+          <img
+            src="../assets/images/partner.jpg"
+            loading="lazy"
+            alt=""
+            class="image-cover"
+          />
           <!-- </div> -->
         </div>
         <a href="https://linktr.ee/ummeduz" class="primary-button w-button">{{
@@ -46,9 +46,8 @@ const { t } = useI18n();
 <style lang="scss" scoped>
 @import "~/assets/_mixins.scss";
 .section {
-  margin-top: 100px;
   width: 100%;
-  padding: 0 10px;
+  padding: 150px 10px 0;
 }
 
 .image-cover {
@@ -56,13 +55,13 @@ const { t } = useI18n();
   margin-top: 10px;
   mix-blend-mode: multiply;
   height: 200px;
-  @include breakpoint(xs){
+  @include breakpoint(xs) {
     height: 250px;
   }
-   @include breakpoint(sm){
+  @include breakpoint(sm) {
     height: 450px;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     height: 350px;
   }
 }

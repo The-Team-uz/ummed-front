@@ -32,4 +32,15 @@ const { t } = useI18n();
 .section {
   margin-top: 150px;
 }
+@media (max-width: 500px) {
+  #provide-assistance {
+    font-weight: 700;
+    color: #000;
+    line-height: 1em;
+    font-size: 30px;
+  }
+  .paragraph-large {
+    font-size: 16px;
+  }
+}
 </style>

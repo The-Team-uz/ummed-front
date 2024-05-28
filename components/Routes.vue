@@ -74,4 +74,17 @@ const { t } = useI18n();
   background-color: #fff;
   border-color: #000;
 }
+@media (max-width: 500px) {
+  .mainword {
+    font-weight: 700;
+    color: #000;
+    line-height: 1em;
+    font-size: 30px;
+  }
+  .my-routes {
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
 </style>

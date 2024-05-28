@@ -56,10 +56,7 @@ const { t } = useI18n();
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 1"
-        class="home-contacts-content"
-      >
+      <div style="opacity: 1" class="home-contacts-content">
         <div class="contacts-title">
           <h2>{{ t("service-title") }}</h2>
         </div>
@@ -71,4 +68,16 @@ const { t } = useI18n();
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media (max-width: 500px) {
+  .contacts-title h2 {
+    font-weight: 700;
+    color: #000;
+    line-height: 1em;
+    font-size: 30px;
+  }
+  .paragraph-large {
+    font-size: 16px;
+  }
+}
+</style>

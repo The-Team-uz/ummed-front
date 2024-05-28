@@ -36,7 +36,6 @@ const modules = [Autoplay, Pagination, FreeMode];
           slidesPerView: 3,
           spaceBetween: 40,
         },
-       
       }"
     >
       <SwiperSlide class="slide"
@@ -64,6 +63,8 @@ const modules = [Autoplay, Pagination, FreeMode];
 </template>
 
 <style lang="scss" scoped>
+@import "~/assets/_mixins.scss";
+
 .swiper {
   width: 100%;
   .slide {
@@ -78,6 +79,25 @@ const modules = [Autoplay, Pagination, FreeMode];
       mix-blend-mode: multiply;
       width: 180px;
       object-fit: contain;
+    }
+  }
+}
+@media (max-width: 500px) {
+  #provide-assistance {
+    font-weight: 700;
+    color: #000;
+    line-height: 1em;
+    font-size: 30px;
+    @include breakpoint(xs) {
+      width: 500px;
+      font-size: 40px;
+    }
+    @include breakpoint(md) {
+      font-size: 60px;
+      width: 800px;
+    }
+    @include breakpoint(lg) {
+      width: 500px;
     }
   }
 }

@@ -3,7 +3,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <footer class="footer-two" style="margin-top: 150px">
+  <footer class="footer-two">
     <div class="footer-upper-section container">
       <div class="footer-flex">
         <div class="footer-about-column">
@@ -131,4 +131,9 @@ const { t } = useI18n();
   </footer>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.footer-two {
+  margin-top: 150px;
+  padding: 0 30px;
+}
+</style>

@@ -9,7 +9,7 @@ const { t } = useI18n();
 const modules = [Autoplay, Pagination, FreeMode];
 </script>
 <template>
-  <div class="section " style="margin-top: 100px">
+  <div class="section" style="margin-top: 100px">
     <div class="base-container w-container">
       <p class="title-11">
         {{ t("company-title") }}
@@ -38,12 +38,15 @@ const modules = [Autoplay, Pagination, FreeMode];
       }"
     >
       <SwiperSlide class="slide"
+        ><img src="~/assets/images/palma.png" alt="" />
+      </SwiperSlide>
+      <SwiperSlide class="slide"
         ><img src="~/assets/images/1.jpg" alt="" />
       </SwiperSlide>
       <SwiperSlide class="slide">
         <img src="~/assets/images/2.jpg" alt="" /> </SwiperSlide
       ><SwiperSlide class="slide">
-        <img src="~/assets/images/3.jpg"  height="150" alt="" /> </SwiperSlide
+        <img src="~/assets/images/3.jpg" height="150" alt="" /> </SwiperSlide
       ><SwiperSlide class="slide">
         <img src="~/assets/images/4.jpg" alt="" /> </SwiperSlide
       ><SwiperSlide class="slide">
@@ -63,7 +66,7 @@ const modules = [Autoplay, Pagination, FreeMode];
 
 <style lang="scss" scoped>
 @import "~/assets/_mixins.scss";
-.section{
+.section {
   width: 100%;
   padding: 0 10px;
 }
@@ -104,8 +107,6 @@ const modules = [Autoplay, Pagination, FreeMode];
     font-size: 35px !important;
   }
 }
-
-
 </style>
 <style>
 .swiper-wrapper {

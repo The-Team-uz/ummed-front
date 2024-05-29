@@ -251,7 +251,7 @@
 }
 
 .footer-highlighter-shape-2 {
-  width: 145px;
+  width: 145px !important;
   position: absolute;
   bottom: 120px;
   right: 24px;

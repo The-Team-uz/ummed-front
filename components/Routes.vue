@@ -18,7 +18,7 @@ const { t } = useI18n();
         </div>
         <a
           href="https://uzum.uz/ru/ummed"
-          target="_blank"
+          target="blank"
           class="primary-button w-button"
           >{{ t("learn-more") }}</a
         >
@@ -36,7 +36,7 @@ const { t } = useI18n();
         </div>
         <a
           href="https://linktr.ee/ummeduz"
-          target="_blank"
+          target="blank"
           class="primary-button w-button"
           >{{ t("learn-more") }}</a
         >

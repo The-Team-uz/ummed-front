@@ -46,7 +46,7 @@ window?.addEventListener("click", (e: Event) => {
           ><img
             src="~/assets/images/logo.png"
             loading="lazy"
-            height="100"
+            height="130"
             alt=""
         /></a>
         <nav role="navigation" class="nav-menu w-nav-menu">

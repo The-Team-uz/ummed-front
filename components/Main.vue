@@ -77,7 +77,7 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
-@import "~/assets/_mixins.scss";
+@import "~/assets/mixins.scss";
 * {
   padding: 0;
   margin: 0;

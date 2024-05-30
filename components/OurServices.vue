@@ -68,7 +68,7 @@ const { t } = useI18n();
   </div>
 </template>
 <style scoped lang="scss">
-@import "~/assets/_mixins.scss";
+@import "~/assets/mixins.scss";
 .services{
   width: 100%;
   padding: 0 10px;

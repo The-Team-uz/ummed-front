@@ -54,7 +54,7 @@ onMounted(() => {
         <div class="block-information home-3">
           <div class="avatar-block">
             <img
-              src="../assets/images/hehe.png"
+              src="../assets/images/hehehe.png"
               loading="lazy"
               alt="3 brand images"
               style="width: 150px"

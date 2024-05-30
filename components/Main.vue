@@ -50,6 +50,22 @@ onMounted(() => {
       <div class="title-22">
         {{ t("main-text") }}
       </div>
+      <div class="partners-block-home-2 about">
+        <div class="block-information home-3">
+          <div class="avatar-block">
+            <img
+              src="../assets/images/hehe.png"
+              loading="lazy"
+              alt="3 brand images"
+              style="width: 150px"
+            />
+          </div>
+          <div class="block-customers">
+            <div class="number-home-2">200+</div>
+            <div class="dark-text">{{ t("200hamkor") }}</div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="wrapper-rightt">
       <div class="titlee">
@@ -118,10 +134,12 @@ onMounted(() => {
       @include breakpoint(xs) {
         width: 500px;
         font-size: 40px;
+        margin-top: 150px;
       }
       @include breakpoint(md) {
-        font-size: 60px;
+        font-size: 70px;
         width: 800px;
+        margin-top: 80px;
       }
       @include breakpoint(lg) {
         width: 500px;
@@ -136,8 +154,9 @@ onMounted(() => {
         width: 500px;
       }
       @include breakpoint(md) {
-        font-size: 20px;
+        font-size: 24px;
         width: 600px;
+        margin-bottom: -150px;
       }
       @include breakpoint(lg) {
         max-width: 500px;
@@ -272,12 +291,33 @@ onMounted(() => {
     font-size: 12px !important;
     line-height: 1 !important;
     span {
-        font-weight: 800;
-        font-size: 11px !important;
-      }
+      font-weight: 800;
+      font-size: 11px !important;
+    }
   }
   .calendarr {
     right: 0% !important;
+  }
+  .title-11 {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  .wrapper-leftt {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .partners-block-home-2 {
+    margin-bottom: 50px;
+    margin-top: 120px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners-block-home-2 {
+    margin-top: -50px !important;
   }
 }
 </style>

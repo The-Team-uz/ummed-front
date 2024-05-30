@@ -134,15 +134,16 @@ onMounted(() => {
       @include breakpoint(xs) {
         width: 500px;
         font-size: 40px;
-        margin-top: 150px;
+        // margin-top: 150px;
       }
       @include breakpoint(md) {
         font-size: 70px;
         width: 800px;
-        margin-top: 80px;
+        margin-top: 200px;
       }
       @include breakpoint(lg) {
         width: 500px;
+        margin-top: 80px;
       }
     }
     .title-22 {
@@ -168,7 +169,17 @@ onMounted(() => {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 60px;
+    @include breakpoint(xs){
+
+      margin-top: -50px;
+    }
+    @include breakpoint(md){
+
+      margin-top: 150px;
+    }
     @include breakpoint(lg) {
+      margin-top: 0;
       width: 45%;
       height: 670px;
     }
@@ -299,7 +310,7 @@ onMounted(() => {
     right: 0% !important;
   }
   .title-11 {
-    margin-top: 50px;
+    margin-top: 100px;
   }
 }
 

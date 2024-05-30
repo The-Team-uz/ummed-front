@@ -65,7 +65,7 @@ const modules = [Autoplay, Pagination, FreeMode];
 </template>
 
 <style lang="scss" scoped>
-@import "~/assets/_mixins.scss";
+@import "~/assets/mixins.scss";
 .section {
   width: 100%;
   padding: 0 10px;

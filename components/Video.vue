@@ -28,7 +28,7 @@ const { t } = useI18n();
 </template>
 
 <style lang="scss" scoped>
-@import "~/assets/_mixins.scss";
+@import "~/assets/mixins.scss";
 .section-1 {
   padding: 150px 10px 0;
   width: 100%;

@@ -35,7 +35,7 @@ const { t } = useI18n();
           />
         </div>
         <a
-          href="https://linktr.ee/ummeduz"
+          href="https://b2b.moysklad.ru/public/mAJBIe2n99uz"
           target="blank"
           class="primary-button w-button"
           >{{ t("learn-more") }}</a

@@ -50,14 +50,14 @@ onMounted(() => {
       <div class="title-22">
         {{ t("main-text") }}
       </div>
-      <div class="partners-block-home-2 about">
+      <div class="partners-block-home-2 about" style="padding-top: 30px;">
         <div class="block-information home-3">
           <div class="avatar-block">
             <img
               src="../assets/images/hehehe.png"
               loading="lazy"
               alt="3 brand images"
-              style="width: 150px"
+              style="width: 150px; "
             />
           </div>
           <div class="block-customers">

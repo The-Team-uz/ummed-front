@@ -396,7 +396,7 @@
   }
 
   .footer-highlighter-shape-one {
-    top: 100px;
+    top: 220px;
     left: auto;
     right: 60px;
   }
@@ -482,11 +482,11 @@
   }
 
   .footer-highlighter-shape-2 {
-    bottom: 140px;
+    bottom: 100px;
     right: 10px;
   }
 
   .footer-highlighter-shape-one {
-    top: 300px;
+    top: 200px;
   }
 }

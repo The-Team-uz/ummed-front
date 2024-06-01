@@ -39,8 +39,6 @@ window?.addEventListener("click", (e: Event) => {
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-
-    <span>Salom</span>
     <div>
       <div class="header-container">
         <a href="/" class="brand w-nav-brand" aria-label="home"

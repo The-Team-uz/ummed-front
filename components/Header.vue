@@ -40,7 +40,8 @@ window?.addEventListener("click", (e: Event) => {
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
 
-    <div class="">
+    <span>hello</span>
+    <div>
       <div class="header-container">
         <a href="/" class="brand w-nav-brand" aria-label="home"
           ><img

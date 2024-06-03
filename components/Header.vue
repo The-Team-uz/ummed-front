@@ -15,6 +15,7 @@ const i18n = useI18n();
 const cookies = useCookie("lang", {
   watch: true,
 });
+
 const currentLang = ref(cookies.value);
 
 const setLang = (lang: string) => {

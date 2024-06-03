@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  nitro: {
+    preset: "static",
+  },
   devtools: { enabled: true },
   plugins: ["~/plugins/element-plus.js"],
   modules: ["nuxt-aos", "@nuxtjs/i18n"],
@@ -16,6 +19,7 @@ export default defineNuxtConfig({
     ],
     langDir: "locales/",
     strategy: "no_prefix",
+    defaultLocale: "ru",
     compilation: {
       strictMessage: false,
     },

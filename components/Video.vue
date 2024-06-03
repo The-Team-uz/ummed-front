@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n();
+const blurImage = "~/assets/images/blurvideo.png";
 </script>
 
 <template>
@@ -14,13 +15,11 @@ const { t } = useI18n();
         <video
           autoplay="true"
           loop="true"
-          style="
-            background-image: url('https://assets-global.website-files.com/64c23c6ec82b2204b21af185/64cd4a16f99de8f60cbd4081_production_id_4121618(720p)-poster-00001.jpg');
-          "
+          :placeholder="blurImage"
           muted="true"
           playsinline="true"
         >
-          <source src="~/assets/images/video1.mp4" data-wf-ignore="true" />
+          <source src="~/assets/images/video2.mp4" data-wf-ignore="true" />
         </video>
       </div>
     </div>
@@ -43,7 +42,7 @@ const { t } = useI18n();
     height: 500px;
   }
 }
-.t{
+.t {
   width: 100%;
   display: flex;
   align-items: center;
@@ -80,7 +79,7 @@ const { t } = useI18n();
 
   text-align: center;
   font-size: 14px;
-  @include breakpoint(xs){
+  @include breakpoint(xs) {
     width: 500px;
   }
   @include breakpoint(md) {
